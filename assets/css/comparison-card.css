@@ -1,0 +1,26 @@
+/* User-selected original tap-to-speak card: one full frosted surface. */
+.tags-video #how-it-works .css-rx9q6s{padding:0!important;overflow:hidden;border:0;border-radius:30px;background:url('../bg/bg-grey.webp') center/cover!important;outline:0;box-shadow:none}
+.tags-video #how-it-works .tv-p--hold{container-type:inline-size}
+.tags-video #how-it-works .tv-p--hold .tv-p__panel{inset:0;padding:clamp(24px,8cqw,40px);border:0;border-radius:30px!important;background:rgba(255,255,255,.62);box-shadow:none;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.tags-video #how-it-works .tv-p--hold .tv-p__ic{background:rgba(255,255,255,.7);color:#2a2a2a}
+.tags-video #how-it-works .tv-p--hold .tv-p__lang{background:rgba(255,255,255,.7);color:#2a2a2a;white-space:nowrap;flex-shrink:0}
+.tags-video #how-it-works .tv-p--hold .tv-p__head{color:#6b675f;font-size:15px}
+.tags-video #how-it-works .tv-p--hold .tv-p__big{font-size:clamp(20px,6.1cqw,28px);line-height:1.2;margin:20px 0 6px}
+.tags-video #how-it-works .tv-p--hold .tv-p__mic{width:84px;height:84px;background:#2a2a2a;box-shadow:0 10px 26px #00000038;outline:4px solid #ffffff85}
+.tags-video #how-it-works .tv-p--hold.is-rec .tv-p__mic{background:#1b1b1b}
+.tags-video #how-it-works .tv-p--hold .tv-p__halo{background:radial-gradient(circle,#1b1b1b19 0,#1b1b1b0d 55%,transparent 72%)}
+.tags-video #how-it-works .tv-p--hold .tv-p__halo::before{background:#ffffff80}
+@media(max-width:767px){
+ .tags-video #how-it-works .tv-p--hold .tv-p__panel{padding:24px}
+ .tags-video #how-it-works .tv-p--hold .tv-p__head{font-size:14px;gap:10px;flex-wrap:wrap}
+ .tags-video #how-it-works .tv-p--hold .tv-p__big{font-size:clamp(20px,6.1cqw,24px)}
+}
+
+/* Keep the conversation introduction to two readable lines at every breakpoint. */
+.tags-video #how-it-works .nature-section-intro p.conversation-intro{max-width:36em}
+.conversation-intro .intro-line{display:block;white-space:nowrap}
+.conversation-intro .intro-short{display:none}
+@media(max-width:767px){
+ .conversation-intro .intro-full{display:none}
+ .conversation-intro .intro-short{display:block}
+}

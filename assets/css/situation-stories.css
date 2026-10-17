@@ -1,0 +1,57 @@
+/* Four concise examples, preserving the shared pastel/nature art direction. */
+.tags-video .situation-stories .module-mediaFilterGrid-media-wrapper{margin-left:0;width:100%}
+.tags-video .situation-stories .module-mediaFilterGrid-media-wrapper .module-inner{max-width:1600px}
+.tags-video .situation-stories .module-mediaFilterGrid-media-wrapper .module-mediaFilterGrid-group{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;overflow:visible!important;padding:0!important;align-items:start}
+.tags-video .situation-stories .module-mediaFilterGrid-group .story-tile{min-width:0!important;max-width:none!important;width:100%!important;overflow:visible;border-radius:0}
+.story-art-wrap{width:100%;isolation:isolate}
+.story-art{--story-tint:linear-gradient(155deg,#b9f4dfed,#f3ffb6e8);--story-photo:url('../bg/bg-meadow.webp');position:relative;isolation:isolate;overflow:hidden;min-height:460px;box-sizing:border-box;padding:26px 22px;border:0;border-radius:var(--vela-radius);background:var(--story-tint),var(--story-photo) center/cover;color:var(--vela-ink)}
+.story-art::before{content:'';position:absolute;inset:0;z-index:-1;background:url('../img/editorial-pixel-frame.svg') center/100% 100%;opacity:.16;mask-image:linear-gradient(90deg,#000,transparent 18%,transparent 82%,#000);pointer-events:none}
+.story-step{position:absolute;right:20px;top:22px;font-size:12px;line-height:1.4;color:var(--vela-muted)}
+.story-workspace{position:relative;display:flex;flex-direction:column;min-height:408px;box-sizing:border-box}
+.story-badge{display:block;padding-right:28px;font-size:11px;line-height:1.4;letter-spacing:.025em}
+.story-art h4{font-size:28px;line-height:1.08;letter-spacing:-.045em;font-weight:600;margin:14px 0 24px}
+.story-art p{margin:0;font-size:16px;line-height:1.45;letter-spacing:0}
+.story-art small{display:block;font-size:11px;line-height:1.4;letter-spacing:.025em;margin-bottom:8px}
+.story-art button{font:inherit;font-size:15px;line-height:1.3;cursor:pointer;min-height:44px}
+.story-chat{display:flex;flex-direction:column;gap:22px}
+.story-prompt{padding:0;background:none;border:0;box-shadow:none}
+.story-reply{padding:20px;background:var(--vela-paper);border:0;border-radius:var(--vela-panel-radius)}
+.story-reply p{font-size:20px;line-height:1.3;font-weight:600;letter-spacing:-.02em}
+.story-art--tone{--story-tint:linear-gradient(155deg,#d0e9ffeb,#eddcf8e8);--story-photo:url('../bg/bg-light.webp')}
+.story-art--tone h4{margin-bottom:16px}.story-task{margin-bottom:24px!important}
+.story-options{display:flex;flex-direction:column;gap:12px}
+.story-option{display:flex;align-items:center;gap:10px;text-align:left;background:transparent;border:1px solid #8d81a15c;border-radius:16px;padding:14px;color:var(--vela-ink);transition:background .18s}
+.story-option.is-chosen{background:var(--vela-paper);border-color:#74668f;font-weight:600}
+.story-radio{width:16px;height:16px;flex:0 0 auto;border:1px solid #88799d;border-radius:50%;display:grid;place-items:center;font-size:11px;background:transparent}
+.is-chosen .story-radio{color:var(--vela-paper);background:#6d5caa;border-color:#6d5caa}
+.story-tone-feedback{margin-top:20px!important;font-size:14px!important;line-height:1.45!important;min-height:62px}
+.story-art--interview{--story-tint:linear-gradient(155deg,#ffedbceb,#ffd8e8e8);--story-photo:url('../bg/bg-daisies.webp')}
+.story-question{padding:22px 20px;background:var(--vela-paper);border:0;border-radius:var(--vela-panel-radius)}
+.story-question p{font-size:20px;line-height:1.3;font-weight:600;min-height:78px;letter-spacing:-.02em}
+.story-coach{margin:20px 0;padding:0;background:none;border:0}
+.story-coach p{font-size:14px;line-height:1.45;min-height:60px}
+.story-next-question,.story-refine{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;border:0;border-radius:0;padding:8px 0;background:transparent;color:var(--vela-ink);text-align:left;text-decoration:underline;text-underline-offset:4px}
+.story-next-question{margin-top:auto}
+.story-art--answer{--story-tint:linear-gradient(155deg,#dacff8eb,#f8dce9e8);--story-photo:url('../bg/bg-light.webp')}
+.story-listening{padding-bottom:20px}
+.story-answer-box{border:0;background:var(--vela-ink);color:var(--vela-paper);padding:20px;border-radius:var(--vela-panel-radius)}
+.story-answer-top{display:flex;align-items:center;gap:12px;margin-bottom:16px;font-size:11px;letter-spacing:.025em}
+.story-wave{display:inline-flex;align-items:center;gap:3px;height:20px;flex:0 0 auto}
+.story-wave i{display:block;width:3px;max-height:20px;background:#c8bcf7;border-radius:2px}
+.story-answer-text{font-size:20px!important;line-height:1.3!important;font-weight:600;min-height:60px;letter-spacing:-.02em!important}
+.story-refine{margin-top:16px}.story-answer-note{font-size:14px!important;margin-top:12px!important;min-height:42px}
+.story-answer-box.is-refined{background:var(--vela-paper);color:var(--vela-ink)}.story-answer-box.is-refined .story-wave i{background:#646c4a}
+.story-art.is-abroad{--story-tint:linear-gradient(155deg,#c8eaffeb,#dbf5d6e8)}.story-art.is-friends{--story-tint:linear-gradient(155deg,#aeece4eb,#d7e8fce8)}.story-art.is-paperwork{--story-tint:linear-gradient(155deg,#e0d4f8eb,#f4e5c5e8)}
+.story-art button:hover{text-decoration-thickness:2px}.story-option:hover{background:#fffefa80}
+
+.tags-video .situation-stories :is(.bentoText-after,.story-original){display:none!important}
+
+
+
+
+.story-art.is-story-running .story-wave i{animation:story-voice .8s ease-in-out infinite alternate}
+.story-wave i:nth-child(3n){animation-delay:-.25s!important}.story-wave i:nth-child(3n+1){animation-delay:-.5s!important}
+@keyframes story-voice{from{transform:scaleY(.3)}to{transform:scaleY(1)}}
+@media(max-width:1279px){.tags-video .situation-stories .module-mediaFilterGrid-media-wrapper .module-mediaFilterGrid-group{display:flex!important;flex-direction:row;overflow-x:auto!important;gap:22px;padding:0 6px 18px 0!important;scroll-snap-type:x proximity;scrollbar-width:thin}.tags-video .situation-stories .module-mediaFilterGrid-group .story-tile{flex:0 0 310px;width:310px!important;min-width:310px!important;scroll-snap-align:start}}
+@media(max-width:767px){.tags-video .situation-stories .module-mediaFilterGrid-media-wrapper .module-mediaFilterGrid-group{gap:18px}.story-art{padding:26px 24px}.story-art h4{font-size:28px}}
+@media(prefers-reduced-motion:reduce){.story-art *{animation:none!important;transition:none!important}}

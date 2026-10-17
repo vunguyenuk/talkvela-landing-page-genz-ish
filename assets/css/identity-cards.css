@@ -1,0 +1,58 @@
+/* The identity-film language: luminous pastel cards, cropped portraits and bare signatures. */
+.tags-discover-cast .tags-cast-card{container-type:inline-size}
+.tags-discover-cast .tags-profile{--profile-top:oklch(89% .1 162);--profile-bottom:oklch(97% .13 113);padding:1px 8.5% 9%;border-radius:17% / 11%;background:radial-gradient(ellipse at 15% 7%,#fffefaac,transparent 44%),linear-gradient(160deg,var(--profile-top) 15%,var(--profile-bottom) 92%);box-shadow:inset 0 0 0 2px #fffefa8c,inset 0 0 15px 4px #fffefa55,0 8px 18px #516d6510;text-align:center;isolation:isolate}
+.tags-discover-cast .tags-profile::before{content:'';position:absolute;inset:5px;border:1px solid #fffefa4a;border-radius:inherit;pointer-events:none;z-index:-1}
+.tags-discover-cast .tags-profile--peach{--profile-top:oklch(97% .13 106);--profile-bottom:oklch(86% .11 352)}
+.tags-discover-cast .tags-profile--aqua{--profile-top:oklch(88% .11 217);--profile-bottom:oklch(93% .11 145)}
+.tags-discover-cast .tags-profile--lilac{--profile-top:oklch(88% .09 281);--profile-bottom:oklch(91% .12 190)}
+.tags-discover-cast .tags-profile-portrait{width:115%;margin:-21% -7.5% 0;z-index:1}
+.tags-discover-cast .tags-person{background:radial-gradient(ellipse at 48% 34%,#fffefab0 12%,#fffefa25 65%,#fffefa00 72%);filter:drop-shadow(0 1px 1px #fffefa60)}
+.tags-discover-cast .tags-profile-name{font-size:17cqw!important;letter-spacing:-.065em!important;line-height:1!important;margin:5% 0 0!important;font-weight:600;white-space:nowrap}
+.tags-profile-spark{font-style:normal;display:inline-block;vertical-align:top;font-size:.4em;color:#139fd8;letter-spacing:0;margin:.12em -.75em 0 .12em}
+.tags-discover-cast .tags-profile-handle{font-size:6.2cqw!important;line-height:1.2;letter-spacing:-.02em;margin-top:4%;color:#3a716d!important}
+.tags-discover-cast .tags-profile-action{font-size:7.4cqw!important;font-weight:600!important;line-height:1;padding:11% 2%;margin-top:9%;background:#fffefb;box-shadow:0 0 12px 4px #fffefa70;border:1px solid #fffefaa6}
+.tags-discover-cast .tags-profile-sticker{font-size:7.7cqw;left:-10%;bottom:11%;padding:5% 9%;border-width:1.5px;box-shadow:2px 3px 0 #171a18;rotate:-14deg}
+.tags-discover-cast .tags-profile-sticker--second{font-size:6.2cqw;left:auto;right:-13%;bottom:20%;padding:4% 7%;rotate:12deg}
+.tags-discover-cast .tags-profile--featured .tags-profile-name{font-size:20cqw!important;margin-top:6%!important}
+.tags-signature{text-align:center;color:#151b19;line-height:1.05}
+.tags-signature-portrait{width:46%;aspect-ratio:1;border-radius:50%;margin:0 auto 8%;position:relative;overflow:hidden;background:linear-gradient(140deg,#e4ffc9,#cce5fb);outline:2px solid #fffefa;box-shadow:0 2px 5px #59758019}
+.tags-signature-portrait img{position:absolute!important;left:50%!important;top:-4%!important;transform:translateX(-50%);width:var(--portrait-size)!important;height:auto!important;max-width:none!important;border-radius:0!important}
+.tags-signature>b{font-size:13cqw;font-weight:600;letter-spacing:-.055em;white-space:nowrap}
+.tags-signature>b i{color:#179ed4;font-style:normal;font-size:.45em;vertical-align:top;margin:0 -.65em 0 .15em}
+.tags-signature>small{display:block;font-size:7.7cqw;margin-top:5%;letter-spacing:-.025em;color:#476f77}
+.tags-discover-cast .tags-cast-card--0{left:17%;top:12%;right:auto;width:clamp(152px,min(14vw,22vh),210px);rotate:-2deg}
+.tags-discover-cast .tags-cast-card--1{left:3%;top:37%;right:auto;width:clamp(105px,10vw,145px);rotate:0deg}
+.tags-discover-cast .tags-cast-card--2{right:16%;top:14%;left:auto;width:clamp(172px,min(16vw,25vh),232px);rotate:3deg}
+.tags-discover-cast .tags-cast-card--3{right:5%;top:56%;left:auto;width:clamp(104px,10vw,144px);rotate:0deg}
+.tags-discover-cast .tags-cast-card--4{left:3%;top:62%;right:auto;width:clamp(205px,20vw,285px);rotate:-3deg}
+.tags-discover-cast .tags-cast-card--5{left:40%;top:79%;right:auto;width:clamp(114px,11vw,158px);rotate:0deg}
+.tags-discover-cast .tags-cast-card--6{right:12%;top:78%;left:auto;width:clamp(158px,15vw,215px);rotate:4deg}
+.tags-discover-cast .tags-cast-card--7{left:43%;top:10%;right:auto;width:clamp(100px,9vw,132px);rotate:0deg;display:block}
+.tags-video .tags-scene-word{font-size:clamp(80px,10.2vw,172px)}
+@media(max-width:767px){
+ .tags-discover-cast .tags-cast-card--0{left:7%;top:14%;width:101px;rotate:-3deg}
+ .tags-discover-cast .tags-cast-card--1{left:0%;top:38%;width:76px}
+ .tags-discover-cast .tags-cast-card--2{right:5%;top:16%;width:108px;rotate:3deg}
+ .tags-discover-cast .tags-cast-card--3{right:1%;top:66%;width:73px;display:block}
+ .tags-discover-cast .tags-cast-card--4{left:-2%;top:72%;width:144px;rotate:-4deg}
+ .tags-discover-cast .tags-cast-card--5{left:40%;top:85%;width:76px}
+ .tags-discover-cast .tags-cast-card--6{right:2%;top:83%;width:99px;rotate:3deg}
+ .tags-discover-cast .tags-cast-card--7{left:40%;top:7%;width:76px;display:block}
+ .tags-video .tags-scene-word{font-size:13vw;line-height:.95}
+ .tags-signature>small{font-size:9cqw}
+ .tags-signature-portrait{outline-width:1px}
+ .tags-video .tags-scene-caption{font-size:15px;max-width:16em;margin-top:18px}
+}
+
+/* Keep the featured card’s action in frame, while retaining an edge-cropped composition. */
+.tags-discover-cast .tags-cast-card--4{top:56%;width:clamp(190px,min(17vw,25vh),248px)}
+.tags-discover-cast .tags-cast-card--6{top:72%;width:clamp(150px,13.5vw,194px)}
+.tags-discover-cast .tags-profile--featured .tags-profile-name{font-size:23cqw!important}
+@media(max-width:767px){.tags-discover-cast .tags-cast-card--4{top:70%;width:140px}.tags-discover-cast .tags-cast-card--6{top:80%;width:99px}}
+@media(max-width:767px){
+ .tags-discover-cast .tags-cast-card--7{top:11%}
+ .tags-discover-cast .tags-cast-card--1{top:32%}
+ .tags-discover-cast .tags-profile-name{font-size:max(18px,17cqw)!important}
+ .tags-discover-cast .tags-profile-handle{font-size:max(7px,6.2cqw)!important}
+ .tags-discover-cast .tags-profile-action{font-size:max(9px,7.4cqw)!important}
+}

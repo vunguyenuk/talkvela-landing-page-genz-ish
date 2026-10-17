@@ -1,0 +1,92 @@
+/* Open people-led learning collages; backgrounds clip independently from the foreground. */
+.tags-video #method .module-featuresTimed-content{gap:44px}
+.tags-video #method .module-featuresTimed-media{width:57%!important;overflow:visible!important;border-radius:0!important;margin-top:36px}
+.tags-video #method .module-featuresTimed-list{width:43%!important;padding-left:22px!important;padding-right:0!important}
+.tags-video #method .module-featuresTimed-media-item{overflow:visible!important}
+.tags-video #method .module-featuresTimed-media-item .media{container-type:inline-size;isolation:isolate;aspect-ratio:1.08!important;overflow:visible!important;border-radius:0!important}
+.lesson-scene{--lesson-photo:url('../bg/bg-meadow.webp');position:relative;width:100%;height:100%;aspect-ratio:1.08;overflow:visible;color:var(--vela-ink);background:none;font-family:var(--skin-font,Hanken,sans-serif)}
+.lesson-scene:before{content:"";position:absolute;inset:0;z-index:0;border-radius:var(--vela-radius);background:linear-gradient(145deg,#fffefaac,#fffefa33),var(--lesson-photo) center/cover;box-shadow:var(--vela-depth)}
+.lesson-scene--talk{--lesson-photo:url('../bg/bg-light.webp')}.lesson-scene--fix{--lesson-photo:url('../bg/bg-leaves.webp')}.lesson-scene--grow{--lesson-photo:url('../bg/bg-daisies.webp')}
+.lesson-pixel{position:absolute;inset:0;border-radius:var(--vela-radius);background:url('../img/editorial-pixel-frame.svg') center/100% 100%;opacity:.4;pointer-events:none;z-index:1;mask-image:linear-gradient(90deg,#000,transparent 24%,transparent 76%,#000)}
+.lesson-scene header{position:absolute;top:7%;left:6%;width:57%;z-index:5}
+.lesson-eyebrow{display:block;font-size:clamp(11px,1.8cqw,14px);letter-spacing:.045em;line-height:1.4;margin-bottom:16px}
+.tags-video #method .lesson-scene h4{font-family:inherit;font-size:7cqw;font-weight:600;letter-spacing:-.055em;line-height:.98;margin:0;color:var(--vela-ink)}
+.lesson-scene .lesson-person{position:absolute!important;inset:auto -9% 0 auto!important;width:80%!important;height:108%!important;max-width:none!important;object-fit:contain!important;object-position:center bottom!important;z-index:2;transform-origin:50% 90%}
+.lesson-ui{position:absolute;z-index:4;background:var(--vela-paper);border:1px solid #fffefa;border-radius:var(--vela-panel-radius);box-shadow:0 15px 36px #29243918,inset 0 0 0 1px #fffefa;font-size:clamp(14px,2.3cqw,18px);line-height:1.3;padding:3cqw;transform-origin:50% 90%}
+.lesson-ui-top{display:flex;align-items:center;gap:10px;font-size:clamp(11px,1.55cqw,13px);letter-spacing:.025em;margin-bottom:14px;line-height:1.2}
+.lesson-avatar{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;flex:0 0 auto;background:var(--vela-acid);border-radius:50%;font-size:24px;font-weight:600;letter-spacing:-.06em}
+.lesson-ui h5{font-family:inherit;font-size:clamp(18px,3.6cqw,28px);line-height:1.08;letter-spacing:-.035em;font-weight:600;margin:0 0 16px}
+.lesson-ui p{margin:0;font-family:inherit!important;font-size:clamp(18px,3.2cqw,25px)!important;line-height:1.25!important;letter-spacing:-.025em!important;color:inherit!important}
+.lesson-ui small{display:block;font-size:clamp(11px,1.7cqw,14px);letter-spacing:.025em;margin-bottom:8px;line-height:1.3}
+.lesson-goal{left:-3%;top:43%;width:58%;transform:rotate(-3deg)}
+.lesson-choice{background:#f0f0ed;border-radius:12px;margin-top:8px;padding:12px 14px;font-size:clamp(16px,2.2cqw,17px);line-height:1.25}
+.lesson-choice.is-selected{background:var(--vela-acid);display:flex;align-items:center;gap:10px;font-weight:600}.lesson-choice.is-selected span{font-size:18px}
+.lesson-sticker{position:absolute;z-index:5;right:1%;bottom:18%;background:var(--vela-acid);border:1px solid var(--vela-ink);border-radius:999px;padding:14px 18px;transform:rotate(8deg);font-size:clamp(13px,2.2cqw,18px);font-weight:600;box-shadow:3px 4px 0 var(--vela-ink)}
+.lesson-caption{position:absolute;bottom:-8%;left:4%;z-index:6;font-size:clamp(12px,1.9cqw,15px);line-height:1.3;background:#fffefae8;border-radius:999px;padding:8px 14px;max-width:80%}
+.lesson-language-options{display:flex;gap:7px;flex-wrap:wrap;border-top:1px solid var(--vela-line);padding-top:14px;margin-top:16px;font-size:clamp(12px,1.85cqw,15px);line-height:1.2}
+.lesson-language-options span{padding:7px 10px;background:#f0f0ed;border-radius:10px;white-space:nowrap}.lesson-language-options span:first-child{background:var(--vela-acid)}
+.lesson-scene--talk .lesson-person{right:-10%!important;width:80%!important;height:107%!important}
+.lesson-prompt{top:42%;left:-3%;width:53%;transform:rotate(-3deg)}
+.lesson-reply{top:64%;right:-3%;width:64%;transform:rotate(3deg);background:#edddf7}
+.lesson-prompt>small,.lesson-reply>small:last-child{margin:10px 0 0;font-size:clamp(13px,1.9cqw,16px);letter-spacing:0;line-height:1.3;color:var(--vela-muted)}
+.lesson-ui :is([lang="ja"],[lang="ko"],[lang="zh"]){letter-spacing:normal!important}
+.lesson-audio{bottom:7%;left:4%;right:4%;padding:14px 18px;display:flex;align-items:center;gap:14px;border-radius:999px}
+.lesson-audio>span:nth-child(2){flex:1}.lesson-audio b{display:block;font-size:clamp(16px,2.2cqw,17px);font-weight:600;line-height:1.2}.lesson-audio small{font-size:clamp(12px,1.8cqw,14px);margin:4px 0 0;letter-spacing:0}
+.lesson-wave{display:flex;align-items:center;justify-content:center;gap:4px;width:14cqw;height:32px;flex:0 0 auto}.lesson-wave i{display:block;width:4px;height:var(--height);background:var(--vela-ink);border-radius:4px;transform-origin:center;animation:lesson-wave 1s ease-in-out infinite alternate;animation-delay:calc(var(--bar)*-.09s)}
+.lesson-mic{display:flex;align-items:center;justify-content:center;border-radius:50%;background:var(--vela-acid);width:42px;height:42px;flex:0 0 auto}.lesson-mic svg{width:24px;height:24px}
+
+.lesson-scene--fix .lesson-person{right:auto!important;left:-12%!important;width:80%!important;height:108%!important}
+.lesson-scene--fix header{left:auto;right:3%;width:52%}
+.lesson-scene--fix .lesson-sticker{top:35%;left:2%;right:auto;bottom:auto;background:#efcce9;transform:rotate(-8deg)}
+.lesson-correction{width:62%;top:43%;right:-3%;transform:rotate(3deg)}
+.lesson-correction .lesson-before{font-size:clamp(16px,2.65cqw,21px)!important;margin-bottom:18px;color:var(--vela-muted)!important}.lesson-before s{text-decoration-thickness:1px}
+.lesson-after{padding:16px;background:#d5f7ce;border-radius:16px}.lesson-after p{font-size:clamp(18px,3.1cqw,25px)!important}.lesson-after mark{background:var(--vela-acid);color:inherit;padding:0 3px;border-radius:4px}.lesson-after>span{display:block;font-size:clamp(14px,2cqw,16px);line-height:1.3;margin-top:12px}
+.lesson-retry{display:flex;gap:10px;align-items:center;margin-top:18px}.lesson-retry .lesson-wave{width:10cqw;height:26px}.lesson-retry b{font-size:clamp(13px,2cqw,16px);font-weight:400}
+.lesson-scene--grow .lesson-person{right:-11%!important;width:80%!important;height:109%!important}.lesson-scene--grow .lesson-sticker{background:#d2e7ff;right:0;bottom:18%}
+.lesson-progress{left:-3%;top:40%;width:57%;transform:rotate(-3deg)}
+.lesson-level{display:flex;align-items:center;gap:20px;margin:8px 0 12px;font-size:8cqw;line-height:1;font-weight:600;letter-spacing:-.05em}.lesson-level>span{font-size:5cqw;font-weight:400}.lesson-level b:last-child{color:#526c48}
+.lesson-progress>p{font-size:clamp(16px,2.3cqw,19px)!important;letter-spacing:0!important}
+.lesson-path{display:flex;align-items:center;margin:20px 0;gap:7px}.lesson-path i{display:flex;align-items:center;justify-content:center;width:30px;height:30px;font-style:normal;border-radius:50%;background:#d7edc0;font-size:18px}.lesson-path span{height:3px;flex:1;background:#d7edc0;transform-origin:left}.lesson-path .is-next{background:var(--vela-acid);border:1px solid var(--vela-ink)}
+.lesson-next{border-radius:16px;padding:14px;background:#f2f3e5}.lesson-next b{display:block;font-size:clamp(16px,2.7cqw,22px);line-height:1.15;font-weight:600;letter-spacing:-.025em}.lesson-next>span{display:block;font-size:clamp(13px,1.9cqw,16px);margin-top:10px;line-height:1.3}
+.tags-video #method .module-featuresTimed-media>.lesson-motion-control{position:absolute;z-index:8;right:2%;bottom:-8%;font:400 12px/1.3 Hanken,sans-serif;margin:0;min-height:44px;padding:8px 14px;color:var(--vela-ink);border:1px solid var(--vela-line);border-radius:999px;background:var(--vela-paper);cursor:pointer;letter-spacing:0}
+.tags-video #method .lesson-motion-control[hidden]{display:none}.lesson-motion-control:focus-visible{outline:3px solid var(--vela-ink);outline-offset:3px}
+.lesson-person{animation:lesson-person-drift 5s ease-in-out infinite alternate}.lesson-ui{animation:lesson-ui-drift 4s ease-in-out infinite alternate}.lesson-reply{animation-delay:-2s}
+.lesson-scene :is(.lesson-person,.lesson-ui,.lesson-wave i){animation-play-state:paused}
+.lesson-motion-running .module-featuresTimed-media-item.is-active .lesson-scene :is(.lesson-person,.lesson-ui,.lesson-wave i){animation-play-state:running}
+@keyframes lesson-person-drift{from{transform:translate3d(0,0,0) rotate(-.4deg)}to{transform:translate3d(0,-5px,0) rotate(.4deg)}}
+@keyframes lesson-ui-drift{from{translate:0 2px}to{translate:0 -3px}}
+@keyframes lesson-wave{from{transform:scaleY(.35)}to{transform:scaleY(1)}}
+@media(max-width:1100px) and (min-width:768px){.tags-video #method .module-featuresTimed-content{gap:26px}.tags-video #method .module-featuresTimed-list{padding-left:0!important}.lesson-goal{width:67%;top:36%}.lesson-correction{width:68%}.lesson-caption{font-size:12px}.lesson-ui{padding:16px}.lesson-choice{padding:10px}.lesson-language-options{margin-top:12px;padding-top:12px}}
+@media(max-width:767px){
+ .tags-video #method .module-featuresTimed-content{top:84px!important;gap:16px}
+ .tags-video #method .module-featuresTimed-media{width:100%!important;margin-top:28px}
+ .tags-video #method .module-featuresTimed-list{width:100%!important;padding-left:0!important;padding-right:0!important;margin-top:16px}
+
+ .tags-video #method .module-featuresTimed-list{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px!important;position:relative;padding-bottom:112px!important}
+ .tags-video #method .module-featuresTimed-list-item{position:static!important;display:block!important;min-width:0;min-height:44px}
+ .tags-video #method .module-featuresTimed-list-item-progress-wrapper{display:none}
+ .tags-video #method .module-featuresTimed-list-item-inner{padding:0!important}
+ .tags-video #method .module-featuresTimed-list-item .title{font-size:0!important;display:flex;align-items:center;justify-content:center;padding:10px 5px;min-height:44px;box-sizing:border-box;border-radius:999px;background:#fffefa;color:var(--vela-ink)}
+ .tags-video #method .module-featuresTimed-list-item .title:after{content:var(--short);font-size:14px;line-height:1.2}
+ .tags-video #method .module-featuresTimed-list-item:nth-child(1){--short:'Your goal'}.tags-video #method .module-featuresTimed-list-item:nth-child(2){--short:'Talk'}.tags-video #method .module-featuresTimed-list-item:nth-child(3){--short:'Feedback'}.tags-video #method .module-featuresTimed-list-item:nth-child(4){--short:'Next step'}
+ .tags-video #method .module-featuresTimed-list-item.is-active .title{background:var(--vela-ink);color:var(--vela-paper)}
+ .tags-video #method .module-featuresTimed-list-item .text-wrapper{position:absolute!important;top:60px;left:0;width:100%;max-height:none!important;display:none}
+ .tags-video #method .module-featuresTimed-list-item.is-active .text-wrapper{display:block}
+ .tags-video #method .module-featuresTimed-list-item .text{font-size:14px;line-height:1.4;padding:0!important;transform:none!important;max-width:none!important}
+ .tags-video #method .module-featuresTimed-media-item .media{aspect-ratio:1/1.58!important}
+ .lesson-scene{aspect-ratio:1/1.58}
+ .lesson-scene header{top:5%;left:5%;width:88%}.lesson-eyebrow{font-size:11px;margin-bottom:12px;max-width:none;padding-right:35px}.tags-video #method .lesson-scene h4{font-size:10cqw;line-height:1}
+ .lesson-scene .lesson-person{right:-27%!important;width:96%!important;height:74%!important;bottom:0!important}
+ .lesson-ui{padding:16px;border-radius:20px}.lesson-ui-top{font-size:11px;margin-bottom:10px;gap:8px}.lesson-avatar{width:26px;height:26px;font-size:20px}
+ .lesson-ui h5{font-size:20px;margin-bottom:12px}.lesson-ui small{font-size:11px}.lesson-choice{font-size:16px;padding:10px 12px;margin-top:7px}
+ .lesson-goal{width:85%;left:-2%;top:42%}.lesson-sticker{display:none}.lesson-caption{display:none}
+ .lesson-language-options{font-size:12px;margin-top:12px;padding-top:12px;gap:6px}.lesson-language-options span{padding:6px 8px}
+ .lesson-prompt{width:76%;top:40%;left:-2%}.lesson-ui p{font-size:18px!important}.lesson-prompt>small,.lesson-reply>small:last-child{font-size:13px}
+ .lesson-reply{width:82%;top:64%;right:-2%}.lesson-audio{left:2%;right:2%;bottom:0;padding:12px;gap:10px}.lesson-audio b{font-size:13px}.lesson-audio small{font-size:11px}.lesson-wave{width:17cqw;gap:3px}.lesson-wave i{width:3px}.lesson-mic{width:32px;height:32px}.lesson-mic svg{width:20px;height:20px}
+ .lesson-scene--fix .lesson-person{left:-36%!important;right:auto!important;width:130%!important;height:100%!important;bottom:0!important}
+ .lesson-scene--fix header{left:5%;right:auto;width:85%}.lesson-scene--fix .lesson-sticker{top:37%;left:0;bottom:auto;font-size:12px}
+ .lesson-correction{width:86%;right:-2%;top:55%}.lesson-correction .lesson-before{font-size:16px!important;margin-bottom:12px}.lesson-after{padding:12px}.lesson-after p{font-size:18px!important}.lesson-after>span{font-size:13px}.lesson-retry{margin-top:12px}.lesson-retry b{font-size:12px}
+ .lesson-progress{width:84%;left:-2%;top:42%}.lesson-level{font-size:12cqw;margin:4px 0 8px}.lesson-progress>p{font-size:16px!important}.lesson-path{margin:14px 0}.lesson-path i{width:26px;height:26px;font-size:16px}.lesson-next{padding:12px}.lesson-next b{font-size:16px}.lesson-next>span{font-size:13px;margin-top:8px}.lesson-scene--grow .lesson-sticker{bottom:47%;font-size:12px}
+ .tags-video #method .module-featuresTimed-media>.lesson-motion-control{bottom:auto;top:12px;right:12px;width:44px;padding:0;font-size:0}.lesson-motion-control:after{content:'Ⅱ';font-size:14px}.lesson-motion-control[aria-pressed='true']:after{content:'▶'}
+}
+@media(prefers-reduced-motion:reduce){.lesson-scene *{animation:none!important}.lesson-motion-control{display:none!important}}
