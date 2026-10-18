@@ -78,3 +78,33 @@ html body.tags-video .ba #top .hybrid-hero-intro .paragraph{display:block;max-wi
 
 /* Distinct Gen Z partner cutouts retain their intrinsic portrait proportions. */
 .partner-card[data-portrait-set="genz"] .partner-film-poster{width:100%;height:82%;object-fit:contain;object-position:center bottom}
+
+/* Original V1 hero copy over the intact V2 pixel and pointer scene. */
+.new-hero{min-height:680px}
+.new-hero.has-native-hover{min-height:680px}
+.new-hero.has-native-hover[data-native-ready="true"]>.new-hero-lockup--classic{visibility:visible;opacity:1}
+.new-hero-lockup--classic{position:absolute;inset:0;z-index:8;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:none;padding:112px 24px 72px;pointer-events:none}
+@media(prefers-reduced-motion:no-preference){
+ .new-hero>.new-hero-lockup--classic{visibility:hidden;opacity:0;transition:opacity .3s ease}
+}
+html body.tags-video .ba #top .new-hero .new-hero-lockup--classic h1{max-width:1000px;font:600 clamp(54px,6.2vw,100px)/1.02 Hanken,sans-serif;letter-spacing:-.06em;text-transform:none}
+.new-hero-lockup--classic h1>span{display:block}
+html body.tags-video .ba #top .new-hero .new-hero-emphasis,
+html body.tags-video .ba #top .new-hero .new-hero-emphasis>span{font-family:fontDidot,serif!important;font-style:italic;font-weight:400}
+html body.tags-video .ba #top .new-hero .new-hero-emphasis{font-size:1.08em;line-height:1.16;letter-spacing:-.045em}
+.new-hero-description{max-width:640px;margin:30px 0 0;font-size:clamp(18px,1.45vw,22px);line-height:1.5;letter-spacing:-.015em}
+.new-hero-description p{margin:0}
+.new-hero-cta{display:inline-flex;align-items:center;justify-content:center;min-height:54px;margin-top:30px;padding:15px 28px;border-radius:999px;background:#151719;color:#fffef8;font-size:17px;font-weight:500;text-decoration:none;pointer-events:auto;transition:background-color .18s ease,transform .18s ease}
+.tags-video #top .new-hero a.new-hero-cta,
+.tags-video #top .new-hero a.new-hero-cta:visited,
+.tags-video #top .new-hero a.new-hero-cta:hover{color:#fff}
+.new-hero-cta:hover{background:#303638;transform:translateY(-2px)}
+.new-hero-cta:focus-visible{outline:2px solid #151719;outline-offset:5px}
+@media(max-width:767px){
+ .new-hero,.new-hero.has-native-hover{min-height:720px}
+ .new-hero-lockup--classic{padding:116px 24px 72px}
+ html body.tags-video .ba #top .new-hero .new-hero-lockup--classic h1{font-size:clamp(36px,10.5vw,60px);line-height:1.05;letter-spacing:-.055em}
+ .new-hero-description{max-width:28em;margin-top:24px;font-size:17px;line-height:1.5}
+ .new-hero-cta{margin-top:26px;font-size:16px}
+ .new-hero-faces{display:none}
+}

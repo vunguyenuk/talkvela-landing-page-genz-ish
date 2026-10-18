@@ -7,11 +7,19 @@
  if(!reduce.matches){
   const nativeFrame=document.createElement('iframe');
   nativeFrame.className='new-hero-native';
-  nativeFrame.title='TalkVela — Your English era starts here';
-  nativeFrame.src='assets/hero-v2/standalone.html';
+  nativeFrame.title='TalkVela interactive pixel background';
+  nativeFrame.setAttribute('aria-hidden','true');
+  nativeFrame.tabIndex=-1;
+  nativeFrame.src='assets/hero-v2/standalone.html?layout=classic';
   nativeFrame.setAttribute('scrolling','no');
   hero.classList.add('has-native-hover');
   hero.append(nativeFrame);
+  // Wait for the visible copy's fonts as well as the GPU scene's readiness.
+  const fontsReady=document.fonts?Promise.all([
+   document.fonts.load('italic 400 1em fontDidot'),
+   document.fonts.load('600 1em Hanken'),
+   document.fonts.ready
+  ]):Promise.resolve();
   window.addEventListener('message',event=>{
    // Local files have opaque origins; identify our frame by its window.
    if(event.source!==nativeFrame.contentWindow||event.data?.type!=='talkvela-native-hero')return;
@@ -23,7 +31,7 @@
      window.ScrollTrigger?.refresh();
     }
    }
-   if(ready)hero.dataset.nativeReady='true';
+   if(ready)fontsReady.then(()=>{hero.dataset.nativeReady='true';});
    if(Number.isFinite(scrollY)||Number.isFinite(scrollX))window.scrollBy({top:Math.max(-2000,Math.min(2000,scrollY||0)),left:Math.max(-2000,Math.min(2000,scrollX||0)),behavior:'instant'});
   });
   // The renderer owns its original entrance, face springs and fluid effect.
