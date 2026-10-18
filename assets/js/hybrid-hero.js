@@ -23,7 +23,7 @@
   window.addEventListener('message',event=>{
    // Local files have opaque origins; identify our frame by its window.
    if(event.source!==nativeFrame.contentWindow||event.data?.type!=='talkvela-native-hero')return;
-   const {height,ready,scrollY,scrollX}=event.data;
+   const {height,ready,loaderGone,scrollY,scrollX}=event.data;
    if(Number.isFinite(height)&&height>=300&&height<=3000){
     const value=height+'px';
     if(hero.style.getPropertyValue('--native-hero-height')!==value){
@@ -31,7 +31,7 @@
      window.ScrollTrigger?.refresh();
     }
    }
-   if(ready)fontsReady.then(()=>{hero.dataset.nativeReady='true';});
+   if(ready&&loaderGone)fontsReady.then(()=>{hero.dataset.nativeReady='true';});
    if(Number.isFinite(scrollY)||Number.isFinite(scrollX))window.scrollBy({top:Math.max(-2000,Math.min(2000,scrollY||0)),left:Math.max(-2000,Math.min(2000,scrollX||0)),behavior:'instant'});
   });
   // The renderer owns its original entrance, face springs and fluid effect.

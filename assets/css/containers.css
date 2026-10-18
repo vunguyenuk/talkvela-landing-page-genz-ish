@@ -1,0 +1,17 @@
+/* Match the Method / audience containers, including scroll-pinned wrappers. */
+.tv-skin{--tv-container-max:1600px;--tv-container-gutter:100px}
+@media(max-width:1279.98px){.tv-skin{--tv-container-gutter:80px}}
+@media(max-width:1179.98px){.tv-skin{--tv-container-gutter:40px}}
+@media(max-width:767.98px){.tv-skin{--tv-container-gutter:20px}}
+
+.tv-skin.tags-video .ba #top .module-coverStacked-media-wrapper{
+ width:100%;box-sizing:border-box;padding-inline:var(--tv-container-gutter)
+}
+.tv-skin.tags-video .ba #top .module-coverStacked-media-wrapper .module-coverStacked-media{
+ width:100%;max-width:var(--tv-container-max);margin-inline:auto
+}
+.tv-skin.tags-video #how-it-works{padding-inline:var(--tv-container-gutter)}
+.tv-skin.tags-video #how-it-works .css-1n748jd,
+.tv-skin.tags-video #how-it-works>.tv-pin{
+ width:100%;max-width:var(--tv-container-max);margin-inline:auto;box-sizing:border-box
+}

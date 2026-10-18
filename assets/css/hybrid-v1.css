@@ -76,8 +76,11 @@ html body.tags-video .ba #top .hybrid-hero-intro .paragraph{display:block;max-wi
  .tags-video #top .hybrid-intro-byline{margin-top:32px;font-size:17px}
 }
 
-/* Distinct Gen Z partner cutouts retain their intrinsic portrait proportions. */
-.partner-card[data-portrait-set="genz"] .partner-film-poster{width:100%;height:82%;object-fit:contain;object-position:center bottom}
+/* Frame the existing Gen Z photographs as close portraits, without stretching. */
+.partner-card[data-portrait-set="genz"] .partner-film-poster{top:clamp(100px,25%,145px);bottom:auto;left:50%;width:160%;height:auto;object-fit:contain;object-position:center top;transform-origin:50% 20%}
+.tags-video .partner-card[data-portrait-set="genz"] .partner-topic{font-size:clamp(22px,1.8vw,26px);max-width:calc(100% - 48px)}
+@media(max-height:800px) and (min-width:768px){.partner-card[data-portrait-set="genz"] .partner-film-poster{width:min(160%,600px)}}
+@media(max-width:767px){.tags-video .partner-card[data-portrait-set="genz"] .partner-topic{font-size:22px;max-width:calc(100% - 40px)}.partner-card[data-portrait-set="genz"] .partner-film-poster{top:120px;width:180%}}
 
 /* Original V1 hero copy over the intact V2 pixel and pointer scene. */
 .new-hero{min-height:680px}

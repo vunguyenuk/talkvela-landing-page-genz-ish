@@ -666,8 +666,11 @@ html.lenis,html.lenis body{height:auto}.lenis:not(.lenis-autoToggle).lenis-stopp
   if(!hero)return;
   const height=Math.ceil(hero.getBoundingClientRect().height);
   if(height!==lastHeight){lastHeight=height;send({height});}
-  if(!ready&&document.querySelector('canvas')&&getComputedStyle(hero).opacity>.8){
-   ready=true;send({ready:true,height});
+  // Hero entrance and preloader exit overlap. Wait for the loading face's
+  // actual removal, rather than treating hero opacity as the loading signal.
+  const preloader=document.querySelector('.fixed[class*="z-[9999]"]');
+  if(!ready&&!preloader&&document.querySelector('canvas')&&getComputedStyle(hero).opacity>.8){
+   ready=true;send({ready:true,loaderGone:true,height});
   }
  }
  // Animation changes styles continuously. Throttle instead of debouncing, which
