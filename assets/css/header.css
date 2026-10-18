@@ -1,0 +1,36 @@
+/* Supaste-inspired top-edge notch, with TalkVela's navigation and waveform. */
+.tv-skin.tags-video .ba header.header-main{padding:0 24px;pointer-events:none}
+.tv-skin.tags-video .ba header.header-main .notch-nav{--header-ink:#151719;position:relative;width:min(900px,100%);overflow:visible;background:var(--header-ink);border:0;border-radius:0 0 18px 18px;color:#fffef8;box-shadow:0 10px 28px #17252814;backdrop-filter:none;-webkit-backdrop-filter:none;pointer-events:auto}
+.notch-nav::before,.notch-nav::after{content:'';position:absolute;top:0;width:20px;height:20px;pointer-events:none}
+.notch-nav::before{right:100%;background:radial-gradient(circle at 0 100%,transparent 19.5px,var(--header-ink) 20px)}
+.notch-nav::after{left:100%;background:radial-gradient(circle at 100% 100%,transparent 19.5px,var(--header-ink) 20px)}
+.tv-skin.tags-video .ba header.header-main .notch-nav .header-nav-top{height:64px;gap:24px;padding:8px 10px 8px 18px}
+.tv-skin.tags-video .ba header.header-main .notch-nav .header-nav-logo{flex:none;gap:9px;min-height:44px;color:#fffef8;text-decoration:none}
+.notch-nav .tv-wordmark{font-size:20px;font-weight:600;line-height:1;letter-spacing:-.045em}
+.header-brand-mark{display:grid;place-items:center;width:28px;height:28px;border-radius:8px;background:#b9acf6;color:#272035}
+.header-brand-mark svg{width:19px;height:19px;display:block}
+.tv-skin.tags-video .ba header.header-main .notch-nav ul.nav-top{flex:1;justify-content:center;gap:2px;font-size:14px}
+.tv-skin.tags-video .ba header.header-main .notch-nav ul.nav-top .button-clear{min-height:44px;padding:10px 13px;border:0;border-radius:8px;color:#c7c9c8;letter-spacing:-.02em;font-size:14px;line-height:1.2;white-space:nowrap}
+.tv-skin.tags-video .ba header.header-main .notch-nav ul.nav-top .button-clear:hover{background:#ffffff0c;color:#fffef8;opacity:1}
+.tv-skin.tags-video .ba header.header-main .notch-nav .header-early-access{display:inline-flex;align-items:center;justify-content:center;flex:none;min-height:44px;padding:10px 16px;border-radius:10px;background:#fffef8;color:#151719;font-size:14px;font-weight:600;line-height:1.2;letter-spacing:-.02em;text-decoration:none;white-space:nowrap;transition:background-color .18s ease}
+.tv-skin.tags-video .ba header.header-main .notch-nav .header-early-access:hover{background:#dcfa73;color:#151719}
+.header-menu-toggle{display:none;align-items:center;justify-content:center;flex:none;width:40px;height:44px;padding:8px;border:0;border-radius:8px;background:transparent;color:#fffef8;cursor:pointer}
+.header-menu-toggle svg{display:block;width:24px;height:24px}
+.notch-nav :is(a,button):focus-visible{outline:2px solid #c1b1fa!important;outline-offset:3px}
+@media(max-width:767px){
+ .tv-skin.tags-video .ba header.header-main{padding-inline:12px}
+ .tv-skin.tags-video .ba header.header-main .notch-nav{border-radius:0 0 16px 16px}
+ .tv-skin.tags-video .ba header.header-main .notch-nav .header-nav-top{height:60px;gap:8px;padding:8px 10px}
+ .notch-nav .tv-wordmark{font-size:18px}
+ .header-brand-mark{width:24px;height:24px;border-radius:7px}
+ .header-brand-mark svg{width:17px;height:17px}
+ .tv-skin.tags-video .ba header.header-main .notch-nav .header-nav-logo{gap:7px;margin-right:auto}
+ .tv-skin.tags-video .ba header.header-main .notch-nav .header-early-access{font-size:12px;padding-inline:11px;min-height:40px;border-radius:9px}
+ .header-menu-toggle{display:flex}
+ .tv-skin.tags-video .ba header.header-main .notch-nav ul.nav-top{display:none;position:absolute;top:calc(100% + 8px);left:0;right:0;padding:8px;gap:4px;background:var(--header-ink);border:1px solid #fffef51a;border-radius:16px;box-shadow:0 14px 28px #17252824}
+ .tv-skin.tags-video .ba header.header-main .notch-nav.is-menu-open ul.nav-top{display:grid}
+ .tv-skin.tags-video .ba header.header-main .notch-nav ul.nav-top>li{display:block!important;margin:0}
+ .tv-skin.tags-video .ba header.header-main .notch-nav ul.nav-top .button-clear{display:flex;justify-content:flex-start;width:100%;min-height:48px;padding:12px 16px;font-size:16px}
+ .notch-nav.is-menu-open .header-menu-toggle{background:#ffffff12}
+}
+@media(prefers-reduced-motion:reduce){.notch-nav *{transition:none!important}}
