@@ -11,14 +11,14 @@
   /* 1. Hero entrance: y 80 -> 0, fade, 1.33s expo.out, stagger 0.2 */
   var hero = $('.module-coverStacked');
   if (hero) {
-    var parts = [$('h1', hero), $('.paragraph', hero), $('.cta-wrapper', hero), $('.module-coverStacked-media', hero)].filter(Boolean);
+    var parts = [hero.querySelector('.new-hero') ? null : $('h1', hero), $('.paragraph', hero), $('.cta-wrapper', hero), $('.module-coverStacked-media', hero)].filter(Boolean);
     gsap.from(parts, { y: isMobile ? 40 : 80, autoAlpha: 0, duration: 1.33, ease: 'expo.out', stagger: .2, force3D: true, clearProps: 'transform,opacity,visibility', delay: .1 });
     /* nav pill grows in like their preload state */
     var nav = $('.ba--header .header-nav');
     if (nav) gsap.from(nav, { y: -20, autoAlpha: 0, duration: 1, ease: 'expo.out' });
 
     /* 2. Hero text on scroll: scale 1.025, fade out, y 80 (scrubbed) while the media rises over it */
-    var tb = $('.module-coverStacked-textBlock', hero);
+    var tb = $('.new-hero', hero) || $('.module-coverStacked-textBlock', hero);
     gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { trigger: hero, start: 'top top', end: function () { return '+=' + tb.offsetHeight * 1.2; }, scrub: true } })
       .to(tb, { scale: 1.025, autoAlpha: 0, y: 80, force3D: true });
   }

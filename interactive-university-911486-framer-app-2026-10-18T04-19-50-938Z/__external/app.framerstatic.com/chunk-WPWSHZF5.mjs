@@ -1,0 +1,2 @@
+import{a as r}from"/__external/app.framerstatic.com/chunk-QFU6OGL3.mjs";import{a as o}from"/__external/app.framerstatic.com/chunk-2FCXHKEL.mjs";import{a}from"/__external/app.framerstatic.com/chunk-SWYZG2NI.mjs";import{e}from"/__external/app.framerstatic.com/chunk-WLHSDIGQ.mjs";var i="c688seo";var t=e(a());var n=e(o()),H=t.default.forwardRef(function({children:s,className:c,...l},m){return(0,n.jsx)("div",{ref:m,...l,className:r(c,i),children:t.default.Children.only(s)})});export{i as a,H as b};
+//# sourceMappingURL=/__external/app.framerstatic.com/chunk-WPWSHZF5.mjs.map

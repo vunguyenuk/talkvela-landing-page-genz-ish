@@ -1,0 +1,61 @@
+/* Creatie study: open landscape, paper notes, calm grid, crisp hierarchy. */
+body.tv-skin.tags-video{--study-paper:#f7f5ef;--study-ink:#152d32;--study-grid:#728e9e16;--study-line:#18313924;--study-lime:#dcfa73;--study-note-shadow:6px 7px 0 #17333c13;--study-space:clamp(64px,7vw,112px)}
+
+/* The landscape belongs to the speaking collage, not the pixel hero. */
+.tags-video .tv-inline__sticky{background:url('../bg/bg-creatie-hills.png') center/cover no-repeat;isolation:isolate}
+.tags-video .tv-inline__sticky::before{content:none}
+.tags-video .ba .tv-inline.has-partner-intros .tv-inline__text .headline{color:#fffef5;font-weight:600;font-size:clamp(36px,4vw,64px);line-height:1.04;letter-spacing:-.05em;text-shadow:0 2px 16px #17313c30}
+.tags-video .tv-inline .tags-signature,.tags-video .tv-inline .tags-signature>small{color:#fffef5;text-shadow:0 1px 3px #17313c80}
+.tags-video .tv-inline .tags-signature>b i{color:#dcfa73}
+.tags-video .partner-opening-wave .partner-wave i{background:#fffef5}
+.tags-video .tv-inline .tv-wave{filter:brightness(0) invert(1)}
+.tags-video .partner-header,.tags-video .partner-navigation{color:#fffef5;text-shadow:0 1px 4px #17313c50}
+@media(max-width:767px){.tags-video .ba .tv-inline.has-partner-intros .tv-inline__text .headline{font-size:clamp(27px,7.5vw,36px);line-height:1.08}}
+
+/* One glass surface for navigation, with clear links over the landscape. */
+.tv-skin .ba header.header-main .header-nav{background:#17333be8;border:1px solid #eff8ee45;border-radius:20px;box-shadow:0 8px 24px #17333b12;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.tv-skin .ba header.header-main .header-nav a{color:#fffef5}
+.tv-skin .ba header.header-main .header-nav a:hover{color:var(--study-lime)}
+
+/* The introduction reads as one statement on an open sheet of grid paper. */
+.tags-video #top .hybrid-hero-intro{background-color:var(--study-paper);background-image:linear-gradient(var(--study-grid) 1px,transparent 1px),linear-gradient(90deg,var(--study-grid) 1px,transparent 1px);background-size:96px 96px}
+.tags-video #top .hybrid-hero-intro .textBlock-inner{padding-top:var(--study-space);padding-bottom:var(--study-space)}
+html body.tags-video .ba #top .hybrid-hero-intro .paragraph{color:var(--study-ink);font-size:clamp(26px,2.6vw,44px);line-height:1.25;max-width:32em}
+.tags-video #top .hybrid-intro-byline{color:#415a5d;font-size:clamp(16px,1.2vw,20px);margin-top:32px}
+.tv-skin .ba #top .hybrid-hero-intro .button-cta{position:relative;background:#fffefa;color:var(--study-ink);border:1px solid #fffefa;border-radius:14px;box-shadow:var(--study-note-shadow),0 6px 16px #17333b0c;min-height:52px;padding:16px 28px;rotate:-2deg;transition:rotate .2s ease,box-shadow .2s ease}
+.tv-skin .ba #top .hybrid-hero-intro .button-cta:before{content:'';position:absolute;right:12px;top:-5px;width:10px;height:10px;background:#4d9eff;border-radius:50%;box-shadow:1px 2px 0 #285b96}
+.tv-skin .ba #top .hybrid-hero-intro .button-cta:hover{background:var(--study-lime)!important;color:var(--study-ink)!important;rotate:0deg;box-shadow:3px 4px 0 #17333c13}
+
+/* A light paper chapter and restrained folded corners on the lesson notes. */
+.tags-video #method{background-color:var(--study-paper);background-image:linear-gradient(var(--study-grid) 1px,transparent 1px),linear-gradient(90deg,var(--study-grid) 1px,transparent 1px);background-size:96px 96px;padding-block:var(--study-space)}
+.tags-video #method h3.headline{font-size:clamp(48px,6.2vw,92px);line-height:.98;letter-spacing:-.06em;color:var(--study-ink)}
+.tags-video #method .tags-chapter-caption{font-size:18px;line-height:1.5;color:#415a5d;max-width:38ch;margin-inline:auto}
+.tags-video #method .module-featuresTimed-list-item .title{letter-spacing:-.035em}
+.tags-video #method .lesson-ui{border-radius:16px;border:1px solid #e7eae3;box-shadow:var(--study-note-shadow),0 14px 28px #17333b0b}
+.tags-video #method .lesson-ui:after{content:'';position:absolute;top:-1px;right:-1px;width:16px;height:16px;background:linear-gradient(45deg,#d9ed8a 50%,#17333b 50%);border-radius:0 14px 0 5px;pointer-events:none}
+.tags-video #method .lesson-sticker{border:1px solid var(--study-line);box-shadow:3px 4px 0 #17333c17}
+
+/* Frame the existing demos, without changing their internal dimensions. */
+.tags-video #skills h2{font-size:clamp(44px,5.2vw,80px);line-height:1;letter-spacing:-.06em;color:var(--study-ink)}
+.tags-video #skills .css-17xkfj5{color:var(--study-ink);letter-spacing:-.04em}
+.tags-video #skills .css-j4yfy6{max-width:52ch;line-height:1.5}
+.tags-video .partner-topline>span{border-radius:7px;background:#fffefaeb;box-shadow:2px 3px 0 #17333c0b}
+.tags-video .partner-card{border:1px solid #fffefa99;border-radius:24px}
+.tags-video .partner-play{border-radius:12px;box-shadow:3px 4px 0 #17333c20}
+
+@media(max-width:767px){
+ .tags-video #top .hybrid-hero-intro,.tags-video #method{background-size:64px 64px}
+ .tags-video #top .hybrid-hero-intro .textBlock-inner{padding-block:64px}
+ .tags-video #method h3.headline{font-size:clamp(44px,10vw,64px)}
+ .tags-video #method .tags-chapter-caption{font-size:16px}
+ .tags-video #method .lesson-ui{border-radius:18px}
+ .tags-video #skills h2{font-size:clamp(40px,9vw,60px)}
+}
+@media(prefers-reduced-motion:reduce){.tv-skin .ba #top .hybrid-hero-intro .button-cta{transition:none;rotate:0deg}}
+
+/* The same clear landscape in the French example and final conversation CTA. */
+.tags-video .tvx[data-k='row-vocab']::after{content:none}
+.tags-video .tvx[data-k='row-vocab'] .bgl{background-image:url('../bg/bg-creatie-hills.png')!important}
+.tags-video .ba .module-download-inner{background:url('../bg/bg-creatie-hills.png') center/cover no-repeat}
+.tags-video .ba .module-download-inner::before{content:none}
+.tags-video .ba .module-download .module-download-inner :is(.headline,.paragraph){color:#fffef5;text-shadow:0 2px 12px #17313c40}

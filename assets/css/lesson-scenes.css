@@ -1,8 +1,10 @@
 /* Open people-led learning collages; backgrounds clip independently from the foreground. */
 .tags-video #method .module-featuresTimed-content{gap:44px}
-.tags-video #method .module-featuresTimed-media{width:57%!important;overflow:visible!important;border-radius:0!important;margin-top:36px}
+.tags-video #method .module-featuresTimed-media{display:grid;grid-template-columns:minmax(0,1fr);width:57%!important;overflow:visible!important;border-radius:0!important;margin-top:36px}
 .tags-video #method .module-featuresTimed-list{width:43%!important;padding-left:22px!important;padding-right:0!important}
-.tags-video #method .module-featuresTimed-media-item{overflow:visible!important}
+/* All four scenes share a grid cell and reserve their full height. Unlike the
+   legacy :first-child anchor, this survives inserted decoration or controls. */
+.tags-video #method .module-featuresTimed-media-item{position:relative!important;inset:auto!important;grid-area:1/1;min-width:0;width:100%;overflow:visible!important}
 .tags-video #method .module-featuresTimed-media-item .media{container-type:inline-size;isolation:isolate;aspect-ratio:1.08!important;overflow:visible!important;border-radius:0!important}
 .lesson-scene{--lesson-photo:url('../bg/bg-meadow.webp');position:relative;width:100%;height:100%;aspect-ratio:1.08;overflow:visible;color:var(--vela-ink);background:none;font-family:var(--skin-font,Hanken,sans-serif)}
 .lesson-scene:before{content:"";position:absolute;inset:0;z-index:0;border-radius:var(--vela-radius);background:linear-gradient(145deg,#fffefaac,#fffefa33),var(--lesson-photo) center/cover;box-shadow:var(--vela-depth)}
@@ -48,8 +50,6 @@
 .lesson-progress>p{font-size:clamp(16px,2.3cqw,19px)!important;letter-spacing:0!important}
 .lesson-path{display:flex;align-items:center;margin:20px 0;gap:7px}.lesson-path i{display:flex;align-items:center;justify-content:center;width:30px;height:30px;font-style:normal;border-radius:50%;background:#d7edc0;font-size:18px}.lesson-path span{height:3px;flex:1;background:#d7edc0;transform-origin:left}.lesson-path .is-next{background:var(--vela-acid);border:1px solid var(--vela-ink)}
 .lesson-next{border-radius:16px;padding:14px;background:#f2f3e5}.lesson-next b{display:block;font-size:clamp(16px,2.7cqw,22px);line-height:1.15;font-weight:600;letter-spacing:-.025em}.lesson-next>span{display:block;font-size:clamp(13px,1.9cqw,16px);margin-top:10px;line-height:1.3}
-.tags-video #method .module-featuresTimed-media>.lesson-motion-control{position:absolute;z-index:8;right:2%;bottom:-8%;font:400 12px/1.3 Hanken,sans-serif;margin:0;min-height:44px;padding:8px 14px;color:var(--vela-ink);border:1px solid var(--vela-line);border-radius:999px;background:var(--vela-paper);cursor:pointer;letter-spacing:0}
-.tags-video #method .lesson-motion-control[hidden]{display:none}.lesson-motion-control:focus-visible{outline:3px solid var(--vela-ink);outline-offset:3px}
 .lesson-person{animation:lesson-person-drift 5s ease-in-out infinite alternate}.lesson-ui{animation:lesson-ui-drift 4s ease-in-out infinite alternate}.lesson-reply{animation-delay:-2s}
 .lesson-scene :is(.lesson-person,.lesson-ui,.lesson-wave i){animation-play-state:paused}
 .lesson-motion-running .module-featuresTimed-media-item.is-active .lesson-scene :is(.lesson-person,.lesson-ui,.lesson-wave i){animation-play-state:running}
@@ -87,6 +87,5 @@
  .lesson-scene--fix header{left:5%;right:auto;width:85%}.lesson-scene--fix .lesson-sticker{top:37%;left:0;bottom:auto;font-size:12px}
  .lesson-correction{width:86%;right:-2%;top:55%}.lesson-correction .lesson-before{font-size:16px!important;margin-bottom:12px}.lesson-after{padding:12px}.lesson-after p{font-size:18px!important}.lesson-after>span{font-size:13px}.lesson-retry{margin-top:12px}.lesson-retry b{font-size:12px}
  .lesson-progress{width:84%;left:-2%;top:42%}.lesson-level{font-size:12cqw;margin:4px 0 8px}.lesson-progress>p{font-size:16px!important}.lesson-path{margin:14px 0}.lesson-path i{width:26px;height:26px;font-size:16px}.lesson-next{padding:12px}.lesson-next b{font-size:16px}.lesson-next>span{font-size:13px;margin-top:8px}.lesson-scene--grow .lesson-sticker{bottom:47%;font-size:12px}
- .tags-video #method .module-featuresTimed-media>.lesson-motion-control{bottom:auto;top:12px;right:12px;width:44px;padding:0;font-size:0}.lesson-motion-control:after{content:'Ⅱ';font-size:14px}.lesson-motion-control[aria-pressed='true']:after{content:'▶'}
 }
-@media(prefers-reduced-motion:reduce){.lesson-scene *{animation:none!important}.lesson-motion-control{display:none!important}}
+@media(prefers-reduced-motion:reduce){.lesson-scene *{animation:none!important}}

@@ -1,0 +1,32 @@
+/* Corrections to the original scenes, without replacement UI. */
+.tv-proportional-slot:not([class*="absolute"]){position:relative}
+.tv-original-art{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.editorial-portrait-slot{position:relative;z-index:3}
+.editorial-portrait-slot+div{display:none}
+/* Keep the main app inside its scene, and decorations behind the content. */
+.bag-images-holder .main-image{object-fit:contain}
+.bag-images-holder{isolation:isolate}
+.site-section--trusts-quiter .comment-main{z-index:2}
+.site-section--trusts-quiter .comment-0,.site-section--trusts-quiter .comment-1,.site-section--trusts-quiter .comment-2{z-index:1}
+@media(max-width:767px){
+ .conclusion-img{width:100%!important;max-width:100%;transform:none!important}
+ .site-section--trusts-quiter .reddit-image{width:85%!important;max-width:85%;right:0!important;translate:0!important}
+}
+/* The old outfit slot was 174 × 617. Give the same phone its own aspect. */
+.outfits-block img[src*="body_woman"]{height:min(70svh,35rem);width:auto;max-width:70vw;z-index:3;object-fit:contain}
+.hero-bag-block .main-image{width:auto;max-width:100%;height:min(65svh,32rem);object-fit:contain;margin-inline:auto}
+/* Separate the original mixed-font words without changing their typography. */
+.site-section--trusts-quiter .title2>span:first-child{margin-right:.14em}
+.site-section--trusts-quiter .title3 .font-alicent{letter-spacing:-.08em!important;margin-right:0!important}
+@media(max-width:767px){
+ .site-section--trusts-quiter .ornament-block>.absolute.grid{position:relative;bottom:auto;margin-top:1rem;gap:1rem}
+ .site-section--trusts-quiter .ornament-block{padding-bottom:1rem}
+}
+/* Fixed template image boxes must contain UI, including the direct-image slots. */
+.site-section img[src*="/english-assets/"]:not([src*="/people/"]):not([src*="/photos/"]){object-fit:contain}
+/* Imported V1 components occupy only the existing visual slots. */
+.tv-v1-visual{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.tv-v1-placeholder{opacity:0!important}
+.tv-v1-primary{inset:auto;left:50%;top:50%;translate:-50% -50%;width:min(420px,82vw);height:min(70svh,560px);z-index:4}
+.hero-bag-block .tv-v1-primary{height:min(65svh,520px);width:min(380px,85vw)}
+@media(max-width:767px){.outfits-block .tv-v1-primary{width:min(360px,88vw)}}

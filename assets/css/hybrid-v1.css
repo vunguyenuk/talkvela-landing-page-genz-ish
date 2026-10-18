@@ -1,0 +1,80 @@
+/* V1 page + V2 hero lockup, fonts and original five-frame face sprites. */
+html body.tags-video .ba .modules-wrapper>section#top.module-coverStacked{padding-top:0!important}
+.tags-video #top::before{display:none}
+.tags-video .tv-main>.ba:first-child{background:var(--skin-paper);padding-top:0!important}
+.new-hero{position:relative;isolation:isolate;display:grid;place-items:center;min-height:clamp(720px,100svh,1100px);width:100%;padding:124px 24px 84px;overflow:hidden;background:#f8f7f3;color:#171719}
+.new-hero-ambient{position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 25%,#b9a0ee9c 0,transparent 65%),radial-gradient(ellipse at 5% 55%,#cbbcf594 0,transparent 45%),radial-gradient(ellipse at 95% 80%,#aed7ff8c 0,transparent 50%),#f8f7f3}
+.new-hero-ambient:after{content:"";position:absolute;inset:0;background:url('../img/editorial-pixel-frame.svg') center/100% 100%;opacity:.1;mask-image:linear-gradient(90deg,#000,transparent 28%,transparent 72%,#000)}
+.new-hero-lockup{position:relative;z-index:3;text-align:center;width:min(100%,1000px);margin:0 auto}
+.new-hero-label{position:relative;display:inline-block;padding:5px 18px 4px;font:500 clamp(20px,2.8vw,42px)/1.15 fontVogueAvantGarde,sans-serif;text-transform:uppercase;color:#fcfcf8;background:#4d9eff80;margin-bottom:26px}
+.new-hero-label:before,.new-hero-label:after{content:"";position:absolute;top:-8px;bottom:-8px;width:2px;background:#4d9eff}
+.new-hero-label:before{left:0}.new-hero-label:after{right:0}
+.new-hero-label i{position:absolute;top:-15px;left:-6px;width:14px;height:14px;border-radius:50%;background:#4d9eff}.new-hero-label i:last-child{left:auto;right:-6px}
+html body.tags-video .ba #top .new-hero h1{font:600 clamp(84px,9.6vw,160px)/.98 fontVogueAvantGarde,sans-serif;letter-spacing:-.05em;color:inherit;margin:0;max-width:none;white-space:normal;text-transform:lowercase;overflow:visible}
+.new-hero-main{display:block}
+.new-hero-era{position:relative;display:inline-block}
+.new-hero-ai{position:absolute;left:100%;top:30%;margin-left:14px;padding:6px 8px;background:#9bff00;color:#171719;font:500 clamp(16px,1.8vw,28px)/1 fontVogueAvantGarde,sans-serif;letter-spacing:-.03em;white-space:nowrap;text-transform:none}
+html body.tags-video .ba #top .new-hero-signature{display:block;position:relative;margin:26px 0 0;font:italic 400 clamp(68px,7.3vw,128px)/1.08 fontDidot,serif;letter-spacing:-.035em;color:inherit}
+.new-hero-initial{display:inline-block;font-family:fontAlicentHightower,serif;font-style:normal;letter-spacing:-.36em;margin-right:.02em}
+.new-hero-faces{position:absolute;inset:0;pointer-events:none;z-index:2}
+.new-hero-face{position:absolute;width:var(--face-size,180px);aspect-ratio:1;will-change:transform}
+.new-hero-sprite{width:100%;height:100%;background-repeat:no-repeat;background-size:500% 500%;background-position:50% 50%;filter:drop-shadow(0 10px 12px #30224612)}
+.new-hero-face--0{--face-size:clamp(80px,8vw,120px);left:6%;top:19%;rotate:-8deg}
+.new-hero-face--1{--face-size:clamp(160px,17vw,260px);left:7%;bottom:7%;rotate:-8deg}
+.new-hero-face--2{--face-size:clamp(160px,16vw,250px);right:7%;bottom:10%;rotate:9deg}
+.new-hero-face--3{--face-size:clamp(70px,7vw,108px);right:10%;top:17%;rotate:8deg}
+.new-hero-face--4{--face-size:clamp(100px,11vw,175px);left:18%;top:43%;rotate:-5deg}
+/* Preserve V1's conversion copy and original large conversation film beneath. */
+.tags-video #top .hybrid-hero-intro .textBlock-inner{padding:68px 24px 0;max-width:960px;min-height:0;gap:0}
+html body.tags-video .ba #top .hybrid-hero-intro .paragraph{font-size:20px;line-height:1.6;max-width:32em}
+.tags-video .ba #top .module-coverStacked-media-wrapper{margin-top:48px}
+@media(min-width:1600px){.new-hero-face--4{left:20%;top:46%}}
+@media(max-width:1100px) and (min-width:768px){
+ .new-hero{min-height:760px}
+ html body.tags-video .ba #top .new-hero h1{font-size:10.8vw}
+ .new-hero-face--4{left:8%;top:44%;--face-size:110px}
+ .new-hero-face--1,.new-hero-face--2{bottom:3%}
+}
+@media(max-width:767px){
+ .new-hero{display:flex;flex-direction:column;min-height:0;padding:124px 20px 40px}
+ .new-hero-label{font-size:26px;margin-bottom:26px;padding:4px 14px}
+ html body.tags-video .ba #top .new-hero h1{font-size:clamp(58px,17.5vw,100px);line-height:.99;letter-spacing:-.055em}
+ .new-hero-main{max-width:7.5ch;margin-inline:auto}
+ .new-hero-ai{font-size:16px;top:34%;margin-left:8px;padding:5px 6px}
+ html body.tags-video .ba #top .new-hero-signature{font-size:clamp(52px,13.7vw,100px);margin-top:26px;white-space:nowrap}
+ .new-hero-faces{position:relative;inset:auto;width:min(100%,380px);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px;margin-top:28px}
+ .new-hero-face{position:relative;inset:auto;--face-size:100%;width:100%;max-width:150px;margin:auto;rotate:0deg}
+ .new-hero-face--0{display:none}
+ .new-hero-face--1{rotate:-6deg}.new-hero-face--2{rotate:7deg}.new-hero-face--3{rotate:-5deg}.new-hero-face--4{rotate:6deg}
+ .tags-video #top .hybrid-hero-intro .textBlock-inner{padding:40px 20px 0}
+ html body.tags-video .ba #top .hybrid-hero-intro .paragraph{font-size:17px;line-height:1.6;max-width:24em}
+ .tags-video .ba #top .module-coverStacked-media-wrapper{margin-top:36px}
+}
+@media(max-width:359px){.new-hero{padding-inline:16px}.new-hero-label{font-size:23px}.new-hero-ai{font-size:14px;margin-left:4px}.new-hero-faces{gap:0 12px}}
+@media(prefers-reduced-motion:reduce){.new-hero *{animation:none!important;transition:none!important}.new-hero-face{will-change:auto}}
+/* Run the real V2 hover renderer only inside the hero. V1 remains the outer page. */
+.new-hero-native{position:absolute;inset:0;width:100%;height:100%;border:0;opacity:0;pointer-events:none;z-index:6}
+.new-hero.has-native-hover{height:var(--native-hero-height,100svh);min-height:720px;padding:0}
+.new-hero.has-native-hover>.new-hero-lockup,.new-hero.has-native-hover>.new-hero-faces,.new-hero.has-native-hover>.new-hero-ambient{visibility:hidden}
+.new-hero.has-native-hover>.new-hero-native{opacity:1;pointer-events:none}
+@media(hover:hover) and (pointer:fine){.new-hero.has-native-hover>.new-hero-native{pointer-events:auto}}
+@media(max-width:767px){.new-hero.has-native-hover{min-height:0}}
+
+/* V2's highlighted introduction, followed by V1's conversion action. */
+.tags-video #top .hybrid-hero-intro .textBlock-inner{max-width:1440px;padding:clamp(80px,9vw,160px) 32px 40px;align-items:center;text-align:center}
+html body.tags-video .ba #top .hybrid-hero-intro .paragraph{display:block;max-width:34em;font:500 clamp(26px,2.35vw,44px)/1.25 fontVogueAvantGarde,sans-serif;letter-spacing:-.035em;color:#191919}
+.tags-video #top .hybrid-hero-intro mark{color:inherit;padding:0 .025em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.tags-video #top .hybrid-hero-intro .intro-mark-blue{background:#aed8ff}
+.tags-video #top .hybrid-hero-intro .intro-mark-purple{background:#d7b5f9}
+.tags-video #top .hybrid-hero-intro .intro-mark-green{background:#8cff00}
+.tags-video #top .hybrid-intro-byline{margin:clamp(32px,3.4vw,56px) 0 0;font:500 clamp(17px,1.4vw,26px)/1.4 fontVogueAvantGarde,sans-serif;letter-spacing:-.035em;color:#191919}
+.tags-video #top .hybrid-intro-byline a{color:inherit;text-decoration:underline;text-underline-offset:.1em}
+.tags-video #top .hybrid-hero-intro .cta-wrapper{margin-top:32px}
+@media(max-width:767px){
+ .tags-video #top .hybrid-hero-intro .textBlock-inner{padding:64px 24px 24px}
+ html body.tags-video .ba #top .hybrid-hero-intro .paragraph{font-size:clamp(24px,5.8vw,32px);line-height:1.3;max-width:28em}
+ .tags-video #top .hybrid-intro-byline{margin-top:32px;font-size:17px}
+}
+
+/* Distinct Gen Z partner cutouts retain their intrinsic portrait proportions. */
+.partner-card[data-portrait-set="genz"] .partner-film-poster{width:100%;height:82%;object-fit:contain;object-position:center bottom}

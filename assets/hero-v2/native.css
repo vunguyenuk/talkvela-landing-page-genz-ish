@@ -1,0 +1,19 @@
+/* V2 owns its typography, pattern and render geometry; V1 owns navigation. */
+html,body{margin:0!important;padding:0!important;overflow:hidden!important;background:#fcfcf8}
+/* Target the two original header controls and sharing control precisely.
+   The WebGL layer also becomes fixed, so never hide every .fixed element. */
+.custom-page .fixed[class*="z-[55]"],
+.custom-page .fixed[class*="z-[56]"],
+.custom-page .fixed.right-8.bottom-4{display:none!important}
+.site-section--hero{margin:0!important}
+.site-section--hero>.section__inner{padding-top:0!important}
+/* Hero-local circular cursor stamps, driven by the original V2 trail routine. */
+.custom-page .trailing-images{display:none!important}
+.hero-cursor-trail{position:fixed;inset:0;z-index:60;overflow:hidden;pointer-events:none;contain:layout style paint}
+.hero-cursor-trail img{position:absolute;left:0;top:0;display:block;width:100px;height:100px;max-width:none;object-fit:contain;opacity:0;transform:scale(0);pointer-events:none}
+@media(prefers-reduced-motion:reduce),(hover:none),(pointer:coarse){.hero-cursor-trail{display:none}}
+/* A separate transparent pattern scene reuses the complete V2 fluid pipeline. */
+html.tv-pattern-only,html.tv-pattern-only body{background:transparent!important}
+.tv-pattern-only .custom-page{height:100svh;min-height:100svh}
+.tv-pattern-only .fixed[class*="9999"]{display:none!important}
+.tv-pattern-slot{position:fixed;inset:0;pointer-events:none}

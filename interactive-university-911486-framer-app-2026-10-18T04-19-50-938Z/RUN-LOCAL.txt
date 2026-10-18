@@ -1,0 +1,10 @@
+Website được tạo bởi Capture Studio.
+
+Cách nhanh: nhấp đúp "Mở website.command".
+
+Hoặc chạy trong Terminal:
+cd "/Users/vunguyen/Desktop/talkvela-landing-page-genz-ish/interactive-university-911486-framer-app-2026-10-18T04-19-50-938Z"
+node .site-server/static-server.mjs --port 8080     (hoặc: python3 -m http.server 8080)
+
+Rồi mở http://localhost:8080 — nếu cổng bận, đổi 8080 thành 8081.
+Lưu ý: không mở trực tiếp index.html bằng trình duyệt (file://), trang cần chạy qua server.

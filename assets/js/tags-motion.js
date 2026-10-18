@@ -58,23 +58,27 @@
   });
   // People are real image assets; learning UI remains selectable, responsive HTML.
   const lessonWave = '<span class="lesson-wave" aria-hidden="true">'+Array.from({length:13},(_,i)=>`<i style="--bar:${i};--height:${[22,38,65,42,86,58,100,65,38,72,45,28,16][i]}%"></i>`).join('')+'</span>';
-  const lessonPerson=(name,alt)=>`<img class="lesson-person" src="assets/img/lesson-${name}.webp" width="900" height="1100" alt="${alt}" loading="lazy" decoding="async">`;
+  // Preserve the newer Gen Z set; each lesson has its own portrait.
+  const lessonPortraits={
+    goal:['assets/img/genz-r47/real-talk-blue.png','A young woman in a blue jacket practicing with her phone'],
+    talk:['assets/img/genz-r47/first-reply-orange.png','A young woman in an orange jacket gesturing as she speaks'],
+    fix:['assets/img/genz-r47/try-again-red.png','A young man in a red polo mid-conversation'],
+    grow:['assets/img/genz-r56/progress-varsity.png','A young man in a blue varsity jacket celebrating his progress']
+  };
+  const lessonPerson=name=>{const [src,alt]=lessonPortraits[name];return `<img class="lesson-person" src="${src}" width="1024" height="1536" alt="${alt}" loading="lazy" decoding="async">`;};
   const lessonPanels=[
     `<div class="lesson-scene lesson-scene--goal"><div class="lesson-pixel" aria-hidden="true"></div><header><span class="lesson-eyebrow">01 / YOUR LANGUAGE, YOUR WAY</span><h4>A big moment.<br>Your own words.</h4></header>${lessonPerson('goal','A young woman holding her phone and smiling')}<span class="lesson-sticker">My next chapter ↗</span><div class="lesson-ui lesson-goal"><div class="lesson-ui-top"><span class="lesson-avatar">v</span><span>LET’S MAKE IT PERSONAL</span></div><h5>What are you practicing for?</h5><div class="lesson-choice is-selected"><span>✓</span> My first internship interview</div><div class="lesson-choice">Meeting new people</div><div class="lesson-choice">Everyday conversations</div><div class="lesson-language-options" aria-label="Language examples"><span>English</span><span lang="ja">日本語</span><span>+5 languages</span></div></div><span class="lesson-caption">A practice plan that starts with you.</span></div>`,
     `<div class="lesson-scene lesson-scene--talk"><div class="lesson-pixel" aria-hidden="true"></div><header><span class="lesson-eyebrow">02 / FIND YOUR FLOW</span><h4>Less pressure.<br>More talking.</h4></header>${lessonPerson('talk','A young woman wearing headphones, smiling and speaking')}<div class="lesson-prompt lesson-ui"><div class="lesson-ui-top"><span class="lesson-avatar">v</span><span>VELA ASKS</span></div><p lang="ja">何を勉強していますか？</p><small>What are you studying?</small></div><div class="lesson-reply lesson-ui"><small>YOUR TURN · 日本語</small><p lang="ja">デザインを勉強しています。</p><small>I’m studying design.</small></div><div class="lesson-audio lesson-ui">${lessonWave}<span><b>Room to find your words.</b><small>Vela listens as you speak.</small></span><span class="lesson-mic" aria-hidden="true">${glyphMic()}</span></div><span class="lesson-caption">Conversation preview · 日本語</span></div>`,
     `<div class="lesson-scene lesson-scene--fix"><div class="lesson-pixel" aria-hidden="true"></div><header><span class="lesson-eyebrow">03 / TRY IT A LITTLE DIFFERENTLY</span><h4>A small fix.<br>A clearer you.</h4></header>${lessonPerson('fix','A young man reviewing a sentence on his phone')}<span class="lesson-sticker">Oh, got it!</span><div class="lesson-ui lesson-correction"><div class="lesson-ui-top"><span class="lesson-avatar">v</span><span>A LITTLE FEEDBACK</span></div><small>YOU SAID</small><p class="lesson-before">I live here <s>since</s> two years.</p><div class="lesson-after"><small>TRY THIS</small><p>I’ve lived here <mark>for</mark> two years.</p><span>Use “for” with a length of time.</span></div><div class="lesson-retry">${lessonWave}<b>Say it again. Make it yours.</b></div></div><span class="lesson-caption">Useful feedback. Still your voice.</span></div>`,
-    `<div class="lesson-scene lesson-scene--grow"><div class="lesson-pixel" aria-hidden="true"></div><header><span class="lesson-eyebrow">04 / KEEP MOVING FORWARD</span><h4>Your next step.<br>Within reach.</h4></header>${lessonPerson('grow','A young woman holding a notebook and celebrating her progress')}<span class="lesson-sticker">You’ve got this ✦</span><div class="lesson-ui lesson-progress"><div class="lesson-ui-top"><span class="lesson-avatar">v</span><span>YOUR LEARNING PATH · 한국어</span></div><div class="lesson-level"><b>2급</b><span aria-hidden="true">↗</span><b>3급</b></div><p>Build on what you know.</p><div class="lesson-path" aria-hidden="true"><i>✓</i><span></span><i>✓</i><span></span><i class="is-next">↗</i></div><div class="lesson-next"><small>YOUR NEXT CHALLENGE</small><b>Tell the story behind your idea.</b><span>Practice giving a longer answer.</span></div></div><span class="lesson-caption">Example: TOPIK · Your pace, always.</span></div>`
+    `<div class="lesson-scene lesson-scene--grow"><div class="lesson-pixel" aria-hidden="true"></div><header><span class="lesson-eyebrow">04 / KEEP MOVING FORWARD</span><h4>Your next step.<br>Within reach.</h4></header>${lessonPerson('grow','A young woman holding a notebook and celebrating her progress')}<span class="lesson-sticker">You’ve got this ✦</span><div class="lesson-ui lesson-progress"><div class="lesson-ui-top"><span class="lesson-avatar">v</span><span>YOUR LEARNING PATH · 한국어</span></div><div class="lesson-level"><b>2급</b><span aria-hidden="true">↗</span><b>3급</b></div><p>Build on what you know.</p><div class="lesson-path" aria-hidden="true"><i>✓</i><span></span><i>✓</i><span></span><i class="is-next">↗</i></div><div class="lesson-next"><small>YOUR NEXT CHALLENGE</small><b>Tell the story behind your idea.</b><span>Practice giving a longer answer.</span></div></div></div>`
   ];
   function glyphMic(){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4M9 21h6"/></svg>';}
   const lessonSection=document.querySelector('#method');
   lessonSection.querySelectorAll('.module-featuresTimed-media-item').forEach((item,i)=>{item.querySelector('.media').innerHTML=lessonPanels[i];});
   // Only the visible step animates. Static content remains complete without motion.
-  let lessonInView=false,lessonPaused=false;
-  const lessonControl=document.createElement('button');lessonControl.className='lesson-motion-control';lessonControl.type='button';lessonControl.setAttribute('aria-pressed','false');lessonControl.setAttribute('aria-label','Pause card motion');lessonControl.textContent='Ⅱ Pause card motion';
-  lessonSection.querySelector('.module-featuresTimed-media').append(lessonControl);
-  const syncLessons=()=>{lessonSection.classList.toggle('lesson-motion-running',lessonInView&&!lessonPaused&&!mq.matches&&!document.hidden);lessonControl.hidden=mq.matches;};
+  let lessonInView=false;
+  const syncLessons=()=>{lessonSection.classList.toggle('lesson-motion-running',lessonInView&&!mq.matches&&!document.hidden);};
   new IntersectionObserver(entries=>{lessonInView=entries[0].isIntersecting;syncLessons();}).observe(lessonSection.querySelector('.module-featuresTimed-media'));
-  lessonControl.addEventListener('click',()=>{lessonPaused=!lessonPaused;lessonControl.textContent=lessonPaused?'▶ Resume card motion':'Ⅱ Pause card motion';lessonControl.setAttribute('aria-pressed',String(lessonPaused));lessonControl.setAttribute('aria-label',lessonPaused?'Resume card motion':'Pause card motion');syncLessons();});
   document.addEventListener('visibilitychange',syncLessons);mq.addEventListener('change',syncLessons);syncLessons();
   // Keep a clear center during the poster lockup, then hand over to the original orbit.
   const cast=document.createElement('div');cast.className='tags-discover-cast';cast.setAttribute('aria-hidden','true');
@@ -101,8 +105,8 @@
   const ring=document.createElement('div');ring.className='tags-token-ring';ring.setAttribute('aria-hidden','true');
   const names=['globe','ja','chat','wave','aa','star','zh','mic','globe','chat','ja','star','wave','aa','mic','zh'];
   ring.innerHTML=names.map(name=>`<span class="tags-token"><span class="tags-token-object">${Array.from({length:12},(_,i)=>`<svg class="tags-token-depth" viewBox="0 0 70 70" style="transform:translateZ(${-12+i}px)"><use href="#tags-shape-${name}"/></svg>`).join('')}<svg class="tags-token-front" viewBox="0 0 70 70"><use href="#tags-front-${name}"/></svg></span></span>`).join('');cta.prepend(ring);
-  const tokens=[...ring.children],control=document.createElement('button');control.type='button';control.className='tags-orbit-control';control.textContent='Ⅱ Pause motion';control.setAttribute('aria-label','Pause decorative motion');control.setAttribute('aria-pressed','false');control.hidden=true;cta.append(control);
-  let paused=false,animations=[],typeTimeline,inView=false,heroInView=true,ringTween;
+  const tokens=[...ring.children];
+  let animations=[],typeTimeline,inView=false,heroInView=true,ringTween;
   const state={angle:0};
   function renderRing(){
     const w=cta.clientWidth,h=cta.clientHeight;
@@ -116,16 +120,14 @@
   }
   renderRing();new ResizeObserver(renderRing).observe(cta);
   function sync(){
-    if(ringTween)ringTween.paused(!inView||paused||mq.matches||document.hidden);
-    animations.forEach(t=>t.paused(paused||!heroInView||document.hidden));
+    if(ringTween)ringTween.paused(!inView||mq.matches||document.hidden);
+    animations.forEach(t=>t.paused(!heroInView||document.hidden));
   }
   new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;sync();},{threshold:.05}).observe(cta);
   new IntersectionObserver(entries=>{heroInView=entries[0].isIntersecting;sync();}).observe(document.querySelector('#top .textBlock'));
   document.addEventListener('visibilitychange',sync);
-  control.addEventListener('click',()=>{paused=!paused;control.textContent=paused?'▶ Resume motion':'Ⅱ Pause motion';control.setAttribute('aria-label',paused?'Resume decorative motion':'Pause decorative motion');control.setAttribute('aria-pressed',String(paused));sync();});
   function motion(){
     animations.forEach(t=>t.kill());animations=[];ringTween?.kill();typeTimeline?.scrollTrigger?.kill();typeTimeline?.kill();
-    control.hidden=true;
     if(!gs)return;
     gs.set([lockup,...coins],{clearProps:'opacity,visibility,transform'});
     gs.set([stage,wave,cast,...castCards].filter(Boolean),{clearProps:'opacity,visibility'});
@@ -136,7 +138,7 @@
     // Never hide the stage: its rotation already communicates the scroll progression.
     if(!scene.classList.contains('has-partner-intros')) typeTimeline=gs.timeline({scrollTrigger:{trigger:scene,start:'top top',end:()=>`+=${innerHeight}`,scrub:true,invalidateOnRefresh:true}})
       .to(cast,{opacity:0,y:80,scale:1.025,duration:.5,ease:'none'}).add(()=>{},1.75);
-    ringTween=gs.to(state,{angle:360,duration:14,repeat:-1,ease:'none',paused:true,onUpdate:renderRing});control.hidden=false;sync();
+    ringTween=gs.to(state,{angle:360,duration:14,repeat:-1,ease:'none',paused:true,onUpdate:renderRing});sync();
   }
   mq.addEventListener('change',motion);motion();
   // Make the original click-to-seek method controls keyboard-operable.

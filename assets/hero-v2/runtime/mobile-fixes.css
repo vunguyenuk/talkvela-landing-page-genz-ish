@@ -1,0 +1,11 @@
+/* Small-screen corrections to the existing Vogue template only. */
+@media(max-width:767px){
+ .site-section--trusts-quiter .title3{white-space:normal;max-width:100%}
+ .site-section--world-of-search .search-message{max-width:calc(100vw - 48px)}
+ .site-section--trusts-quiter .comment-main{max-width:calc(100vw - 64px);left:0;top:0}
+ .site-section--trusts-quiter .comment-1,.site-section--trusts-quiter .comment-2{max-width:90%}
+ .header-menu-active a,.header-menu a{display:flex;align-items:center;min-height:44px}
+}
+@media(max-width:479px){
+ body .fixed.left-0.top-0 a[class*="!text-current"],body .fixed.left-0.top-0 .mx-2{display:none}
+}

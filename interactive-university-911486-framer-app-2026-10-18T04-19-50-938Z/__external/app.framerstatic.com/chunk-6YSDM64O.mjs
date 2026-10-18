@@ -1,0 +1,2 @@
+import{f as t}from"/__external/app.framerstatic.com/chunk-7Z462Z4S.mjs";import{a as e}from"/__external/app.framerstatic.com/chunk-WC34TENX.mjs";import{a as f}from"/__external/app.framerstatic.com/chunk-SWYZG2NI.mjs";import{e as o}from"/__external/app.framerstatic.com/chunk-WLHSDIGQ.mjs";var r=o(f(),1);function c(n,s,m=[]){r.default.useEffect(()=>{e()?.isRemountingUI()||t(n,s)},m)}export{c as a};
+//# sourceMappingURL=/__external/app.framerstatic.com/chunk-6YSDM64O.mjs.map

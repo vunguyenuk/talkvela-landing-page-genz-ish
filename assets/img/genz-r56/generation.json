@@ -1,0 +1,32 @@
+{
+  "tool": "Built-in image_gen",
+  "background": "Transparent alpha preserved; generated originals copied without alteration",
+  "existing_preserved": [
+    "../genz-r47/real-talk-blue.png",
+    "../genz-r47/first-reply-orange.png",
+    "../genz-r47/try-again-red.png"
+  ],
+  "lesson_assignments": {
+    "goal": "../genz-r47/real-talk-blue.png",
+    "talk": "../genz-r47/first-reply-orange.png",
+    "fix": "../genz-r47/try-again-red.png",
+    "grow": "progress-varsity.png"
+  },
+  "partner_assignments": {
+    "Nia": "partner-nia-red.png",
+    "Minh": "partner-minh-lilac.png",
+    "Jay": "partner-jay-cobalt.png"
+  },
+  "generated_originals": {
+    "progress-varsity.png": "exec-e8447fdc-b766-4fc2-950a-9b0bfb3c1948.png",
+    "partner-nia-red.png": "exec-4e99934b-60a2-4a22-8795-9e04c593992f.png",
+    "partner-minh-lilac.png": "exec-31232062-2700-4e8b-9926-ff96bcaebc9f.png",
+    "partner-jay-cobalt.png": "exec-cb7631ab-a22a-4469-91fd-7753ab17fdf7.png"
+  },
+  "prompts": {
+    "progress-varsity.png": "Use case: photorealistic-natural. Asset type: single transparent cutout person for a playful Gen Z English-speaking learning app. Create one stylish Vietnamese adult man aged 23, short spiky dark hair, expressive eyebrows, small silver hoop earrings, wearing a cobalt and cream varsity jacket over a plain white tee, relaxed dark trousers. Holding a closed notebook in his left hand at waist height, right hand making a small celebratory fist near his shoulder. Candid self-assured delighted expression, direct flash editorial photography, textured fabric and realistic skin, energetic Pinterest Gen Z portrait rather than corporate stock photo. Front three-quarter view, relaxed standing body, crop from head to mid thigh, legs together in natural comfortable stance. Entire head and both hands visible with generous transparent margin. Genuine transparent background, clean professional alpha edges, no environment, no text, no graphics, no symbols, no watermark. Vertical composition.",
+    "partner-nia-red.png": "Use case: photorealistic-natural. Asset type: single transparent cutout person for a Gen Z English learning app practice partner card. One South Asian adult woman aged 24 with medium brown skin, short choppy black bob with subtle burgundy highlights, chunky silver headphones around her neck, small silver earrings. Oversized cherry red zip-up track jacket with cream stripes, white tee, relaxed dark jeans. She holds a smartphone loosely in one hand at waist height and makes a conversational open hand gesture, smiling with confident cheeky personality. Candid direct flash editorial fashion photography, realistic skin and fabric, distinctly expressive Pinterest Gen Z styling rather than corporate stock photo. Portrait front three-quarter view from head to mid thigh, entire head and both hands included, natural comfortable upright stance with legs together. Genuine transparent background and clean alpha edges. No environment, no text, no graphics, no watermark.",
+    "partner-minh-lilac.png": "Use case: photorealistic-natural. Asset type: single transparent cutout person for a Gen Z English learning app practice partner card. One East Asian adult man aged 23 with a tousled platinum blond shag hairstyle, dark eyebrows, slim black glasses, small silver stud earrings. Lilac oversized windbreaker over a plain black tee, relaxed charcoal trousers. He holds a smartphone casually in his right hand at waist level and raises his free hand in a casual friendly wave, warm candid smile with character. Direct flash editorial photography, realistic skin texture, expressive young street-style energy, Pinterest Gen Z style rather than corporate stock photo. Standing relaxed, front three-quarter view, portrait framing head to mid thigh, both hands and whole head visible with transparent margin. Genuine transparent background, clean alpha edges. No environment, no text, no graphics, no watermark.",
+    "partner-jay-cobalt.png": "Use case: photorealistic-natural. Asset type: single transparent cutout person for a Gen Z English learning app practice partner card. One Black adult woman aged 24 with warm dark brown skin, long thin braids tied in a high ponytail, silver hoop earrings, vivid cobalt blue oversized denim jacket over a lime green crew neck tee, relaxed black jeans. She is chatting animatedly, laughing with one hand lightly touching her chest and the other hand gesturing outward, approachable and confident youthful personality. Punchy direct flash editorial photography, realistic skin and fabric texture, expressive Pinterest Gen Z streetwear rather than a generic corporate stock photo. Relaxed standing three-quarter view, head to mid thigh, natural comfortable stance, entire head and both hands visible with transparent margins. Genuine transparent background and clean alpha edges, no environment, no text, no logos, no graphics, no watermark."
+  }
+}

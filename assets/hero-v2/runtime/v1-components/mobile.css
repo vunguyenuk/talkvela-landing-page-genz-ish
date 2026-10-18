@@ -1,0 +1,54 @@
+@container v1 (max-width:540px){.tvx{position:relative!important;inset:auto!important;height:auto!important;min-height:0!important;width:100%;overflow:visible}
+.tvx .tvx__stage{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;transform:none!important;overflow:visible!important;padding:26px 18px 12px!important;box-sizing:border-box}
+.tvx .tvx__stage :is(.glass,.list){position:relative!important;inset:auto!important;width:100%!important;height:auto!important;min-height:0!important;margin:0!important;padding:18px!important;box-sizing:border-box;border-radius:20px!important}
+.tvx .tvx__stage .ghost{display:none}
+.tvx .lab{font-size:11px;letter-spacing:.035em}
+.tvx .fh{flex-wrap:wrap;gap:10px}
+.tvx .fh h3{font-size:22px!important;flex-basis:100%;line-height:1.15}
+.tvx .auto{font-size:12px;padding:5px 8px;transform:none!important}
+.tvx .auto svg{width:14px;height:14px}
+.tvx .say{width:30px;height:30px;transform:none!important}
+.tvx .say svg{width:18px;height:18px}
+.tvx .ipa{font-size:13px;margin:12px 0 18px;line-height:1.4}
+.tvx .mean{font-size:16px;line-height:1.4;margin:8px 0 16px}
+.tvx .from{padding:12px;border-radius:14px}
+.tvx .from p{font-size:16px;line-height:1.4}
+.tvx .prog{font-size:12px;flex-wrap:wrap;gap:6px;margin-top:18px}
+.tvx .dot{width:10px;height:10px}
+.tvx .prog span.t{margin-left:0}
+.tvx .role{gap:10px;margin-bottom:18px}
+.tvx .role em{font-size:11px;padding:6px 8px;white-space:nowrap}
+.tvx .m{gap:8px;margin-bottom:14px}
+.tvx .m .av{width:24px;height:24px;font-size:12px}
+.tvx .m .b{font-size:16px;line-height:1.4;padding:12px;border-radius:16px;min-width:0;max-width:100%}
+.tvx .m.me .b{gap:8px}
+.tvx .wv{height:22px;gap:3px;flex-shrink:0}
+.tvx .wv i{width:3px}
+.tvx .tip{margin-left:0;padding:12px;border-radius:14px}
+.tvx .tip .h{font-size:13px;line-height:1.3;gap:6px;margin-bottom:10px}
+.tvx .tip .h svg{width:18px;height:18px;flex-shrink:0}
+.tvx .alts{gap:8px}
+.tvx .alts span{font-size:14px;padding:8px 10px;border-radius:10px}
+.tvx .pick{font-size:12px;gap:8px}
+.tvx .pick svg{width:20px;height:20px}
+.tvx .today h3{font-size:24px;line-height:1.1;margin:14px 0 20px}
+.tvx .ask{gap:10px;margin:0 0 18px;padding:14px}
+.tvx .ask .av{width:32px;height:32px}
+.tvx .ask .av svg{width:32px;height:32px}
+.tvx .ask p{font-size:16px;line-height:1.4}
+.tvx .chips{gap:8px;margin:0 0 20px}
+.tvx .chip{font-size:14px;padding:8px 10px}
+.tvx .go{flex-wrap:wrap;gap:12px;margin:0}
+.tvx .go .t{font-size:12px}
+.tvx .go .btn{font-size:14px;padding:12px;min-height:44px;gap:8px}
+.tvx .go .btn svg{width:18px;height:18px}
+.tvx .tvx__stage .list{padding:0!important}
+.tvx .list .it{display:flex;align-items:flex-start;padding:14px;gap:10px;border-radius:20px;margin-bottom:12px;flex-wrap:wrap}
+.tvx .it .ic{width:30px;height:30px;flex:0 0 auto}
+.tvx .it .ic svg{width:30px;height:30px}
+.tvx .it>div:not(.acts){flex:1;min-width:0}
+.tvx .it .top{font-size:12px;margin-bottom:6px}
+.tvx .it b{font-size:16px;line-height:1.3}
+.tvx .it p{font-size:14px;line-height:1.4;margin-top:6px}
+.tvx .acts{font-size:14px;gap:14px;margin-top:10px;flex-basis:100%;flex-wrap:wrap}
+.tvx .acts span{font-size:14px;padding:10px 12px;min-height:44px;display:flex;align-items:center}}

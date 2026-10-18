@@ -1,0 +1,13 @@
+/* Restrained accents, never full-size fields or overlays across product UI. */
+.visual-accent-host{position:relative;isolation:isolate}
+.visual-accent{display:block;position:absolute;pointer-events:none;user-select:none;z-index:0;opacity:.8;color:#a985e5}
+.visual-accent svg{display:block;width:100%;height:100%;shape-rendering:crispEdges}
+.visual-accent--conversation{width:clamp(100px,12vw,180px);aspect-ratio:3/2;top:-46px;right:16px}
+.visual-accent--method{width:clamp(90px,10vw,148px);aspect-ratio:21/17;top:-34px;right:12px;color:#8de538}
+#how-it-works .visual-accent-host>.css-rx9q6s,
+#how-it-works .visual-accent-host>.css-cjq8fg{position:relative;z-index:1;isolation:isolate}
+#method .visual-accent-host>.module-featuresTimed-media-item{z-index:1}
+@media(max-width:767px){
+ .visual-accent--conversation{width:88px;right:8px;top:-28px}
+ .visual-accent--method{display:none}
+}
