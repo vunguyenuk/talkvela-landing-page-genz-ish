@@ -2,7 +2,7 @@
 body.tv-skin.tags-video{--study-paper:#f7f5ef;--study-ink:#152d32;--study-grid:#728e9e16;--study-line:#18313924;--study-lime:#dcfa73;--study-note-shadow:6px 7px 0 #17333c13;--study-space:clamp(64px,7vw,112px)}
 
 /* The landscape belongs to the speaking collage, not the pixel hero. */
-.tags-video .tv-inline__sticky{background:url('../bg/bg-creatie-hills.png') center/cover no-repeat;isolation:isolate}
+.tags-video .tv-inline__sticky{background:url('../bg/bg-creatie-hills.webp') center/cover no-repeat;isolation:isolate}
 .tags-video .tv-inline__sticky::before{content:none}
 .tags-video .ba .tv-inline.has-partner-intros .tv-inline__text .headline{color:#fffef5;font-weight:600;font-size:clamp(36px,4vw,64px);line-height:1.04;letter-spacing:-.05em;text-shadow:0 2px 16px #17313c30}
 .tags-video .tv-inline .tags-signature,.tags-video .tv-inline .tags-signature>small{color:#fffef5;text-shadow:0 1px 3px #17313c80}
@@ -55,7 +55,7 @@ html body.tags-video .ba #top .hybrid-hero-intro .paragraph{color:var(--study-in
 
 /* The same clear landscape in the French example and final conversation CTA. */
 .tags-video .tvx[data-k='row-vocab']::after{content:none}
-.tags-video .tvx[data-k='row-vocab'] .bgl{background-image:url('../bg/bg-creatie-hills.png')!important}
-.tags-video .ba .module-download-inner{background:url('../bg/bg-creatie-hills.png') center/cover no-repeat}
+.tags-video .tvx[data-k='row-vocab'] .bgl{background-image:url('../bg/bg-creatie-hills.webp')!important}
+.tags-video .ba .module-download-inner{background:url('../bg/bg-creatie-hills.webp') center/cover no-repeat}
 .tags-video .ba .module-download-inner::before{content:none}
 .tags-video .ba .module-download .module-download-inner :is(.headline,.paragraph){color:#fffef5;text-shadow:0 2px 12px #17313c40}
